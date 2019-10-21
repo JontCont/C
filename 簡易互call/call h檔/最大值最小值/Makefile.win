@@ -1,0 +1,37 @@
+# Project: Project1
+# Makefile created by Dev-C++ 5.11
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+OBJ      = main.o max.o min.o sumavg.o
+LINKOBJ  = main.o max.o min.o sumavg.o
+LIBS     = -L"e:/Program Files (x86)/Dev-Cpp/MinGW64/lib" -L"e:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc
+INCS     = -I"e:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"e:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"e:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
+CXXINCS  = -I"e:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"e:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"e:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"e:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
+BIN      = Project1.exe
+CXXFLAGS = $(CXXINCS) 
+CFLAGS   = $(INCS) 
+RM       = rm.exe -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+main.o: main.c
+	$(CPP) -c main.c -o main.o $(CXXFLAGS)
+
+max.o: max.c
+	$(CPP) -c max.c -o max.o $(CXXFLAGS)
+
+min.o: min.c
+	$(CPP) -c min.c -o min.o $(CXXFLAGS)
+
+sumavg.o: sumavg.c
+	$(CPP) -c sumavg.c -o sumavg.o $(CXXFLAGS)
