@@ -6,7 +6,7 @@
 
 int main(void)
 {  
-	char *args[]={"ls",NULL};
+	char *args[]={NULL,NULL};
 	execvp("ls",args[0],args[1]);
 	printf("the end program\n");
 }
