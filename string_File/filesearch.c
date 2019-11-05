@@ -9,7 +9,7 @@ int main(void)
 	char option,*p;
 	char find[20],stdName[20],stdID[20];
 	
-	fp1=fopen("abc.txt","r");
+	fp1=fopen("filetext/abc.txt","r");
 	
 		printf("選擇搜尋(1)學號、(2)姓名:");
 		scanf("%s",&option);

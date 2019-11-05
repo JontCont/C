@@ -8,7 +8,7 @@ int main(void)
 	char name[20],Sname[20],Iname[20]; 
 	float a,b,c,sum,avg,max=INT_MIN,min=INT_MAX;
 	
-	fp1=fopen("dat.txt","r");//dat.txt read
+	fp1=fopen("filetext/dat.txt","r");//dat.txt read
 	fp2=fopen("out.txt","w");//out.txt write
 	
 	while(fscanf(fp1,"%s %f %f %f",name ,&a,&b,&c)!=EOF) //fscanf ==-1 ®É 
