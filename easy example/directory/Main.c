@@ -1,10 +1,7 @@
 #include <stdio.h>
 #include <string.h>
-#include "Ch06_02.c" 
-#include "Ch06_03.c"
-#include "Ch06_04.c" 
-#include "Ch06_05.c" 
-#include "Ch06_06.c" 
+#include "Ch06.h" 
+
 
 int Price_01 (void)
  {
