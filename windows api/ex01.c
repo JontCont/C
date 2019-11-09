@@ -1,6 +1,7 @@
-
-#define UNICODE
 #include<windows.h>
+#include<time.h>
+#define UNICODE
+
 
 LRESULT CALLBACK WndProc(HWND hwnd, UINT message, WPARAM wparam, LPARAM lparam){
   switch(message){

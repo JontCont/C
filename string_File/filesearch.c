@@ -4,12 +4,13 @@
 
 int main(void)
 {
+	//-- 宣告 --//
 	FILE *fp1;
-	
 	char option,*p;
 	char find[20],stdName[20],stdID[20];
+	//---------------//
 	
-	fp1=fopen("filetext/abc.txt","r");
+	fp1=fopen("filetext/abc.txt","r");  //open-abc.txt
 	
 		printf("選擇搜尋(1)學號、(2)姓名:");
 		scanf("%s",&option);
