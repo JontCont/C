@@ -9,7 +9,7 @@ int main(void)
 	
 		for (i=0; i<5; i++)
 		{    
-		scanf("%d",&score[i]);  
+			scanf("%d",&score[i]);  
 		}  
 		
 	ans1=sum(score);  
