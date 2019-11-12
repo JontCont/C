@@ -20,7 +20,7 @@ Refer to the C/C++ language topic.
  若單純打gcc(g++)只會顯示 
  gcc(g++):fatal error :no input files的訊息!!
  
- ###編譯方式
+### 編譯方式
 將此檔案儲存為.cpp，此檔案稱為源文件(Source File) ，
 由後綴"cpp"告訴系統這個文件是一個C++程式，常見的包括: .cc、.cxx、.cpp、.cp及.c
 
