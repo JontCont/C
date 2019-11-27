@@ -23,7 +23,7 @@ int main(void)
 	for(i=0;i<4; i++) amount[i]=0;
 	for(i=0;i<7;i++) amo_day[i]=0;
 	
-	while(fscanf(fp1,"%s %d %d %d %d",&typeday,&nuber[0],&nuber[1],&nuber[2],&nuber[3])!=EOF) //fscanf ==-1 時 
+	while(fscanf(fp1,"%s %d %d %d %d",typeday,&nuber[0],&nuber[1],&nuber[2],&nuber[3])!=EOF) //fscanf ==-1 時 
 	{
 		/*加總計數 (cartype)*/
 		for(i=0;i<4;i++) amount[i] += nuber[i]; 

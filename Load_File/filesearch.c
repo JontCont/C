@@ -20,7 +20,7 @@ int main(void)
 			printf("請輸入搜尋條件 : " );
 			scanf("%s",&find);	
 			do{	
-				fscanf(fp1,"%s %s ",&stdID,&stdName);
+				fscanf(fp1,"%s %s ",stdID,stdName);
 				p =strstr(stdID,find);
 				if(p!=NULL)
 					printf("%s %s \n",stdID,stdName);				
