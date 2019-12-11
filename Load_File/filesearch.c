@@ -4,7 +4,7 @@
 
 int main(void)
 {
-	//-- «Å§i --//
+	//-- å®£å‘Š --//
 	FILE *fp1;
 	char option,*p;
 	char find[20],stdName[20],stdID[20];
@@ -12,12 +12,12 @@ int main(void)
 	
 	fp1=fopen("filetext/abc.txt","r");  //open-abc.txt
 	
-		printf("¿ï¾Ü·j´M(1)¾Ç¸¹¡B(2)©m¦W:");
+		printf("é¸æ“‡æœå°‹(1)å­¸è™Ÿã€(2)å§“å:");
 		scanf("%s",&option);
 		
 		if(option == '1')
 		{
-			printf("½Ğ¿é¤J·j´M±ø¥ó : " );
+			printf("è«‹è¼¸å…¥æœå°‹æ¢ä»¶ : " );
 			scanf("%s",&find);	
 			do{	
 				fscanf(fp1,"%s %s ",stdID,stdName);
@@ -28,7 +28,7 @@ int main(void)
 		}
 		else if(option == '2')
 		{
-			printf("½Ğ¿é¤J·j´M±ø¥ó : ");
+			printf("è«‹è¼¸å…¥æœå°‹æ¢ä»¶ : ");
 			scanf("%s",&find);
 			do{	
 			fscanf(fp1,"%s %s ",&stdID,&stdName);
@@ -41,4 +41,3 @@ int main(void)
 	fclose(fp1);
     return 0; 
 }
-
