@@ -1,109 +1,91 @@
-#include <stdio.h>
-
 /*
-【解題思路】
-最遠關係僅會發生在：
-1. 從祖先到無孩子成員
-2. 從無孩子成員到無孩子成員
-因此可以藉由深度優先搜尋從祖先找到無孩子成員，並用深度找出從祖先到無孩子成員的血緣距離
-同時再過程中若有節點有兩位以上的孩子則可以藉由兩個孩子可到的最深深度來算出這兩個孩子間的血緣距離（由於都是最深，所以相加就是最遠）
-深度優先搜尋法：優先往下尋找，只到不能往下才往回推算，可以參考http://simonsays-tw.com/web/DFS-BFS/DepthFirstSearch.html
+第4題 血緣關係
+   問題描述
+      小宇有一個大家族。有一天，他發現記錄整個家族成員和成員間血緣關係的家族族
+      譜。 小宇 對於最遠的血緣關係 (我們稱之為 "血緣距離 ") 有多遠感到很好奇。
+      0是 7的 孩子 1、 2和 3是 0的 孩子 4和 5是 1的 孩子 6是 3的 孩子 。
+      我們可以輕易的發現最遠的親戚關係為4(或 5)和 6，他們的 "血緣距離 "是 4 (4~1 1~00~3 3~6)。
+      給予任一家族的關係圖，請 找出最遠的"血緣距離 "。你可以假設只有一個人是整個家族
+      成員的祖先，而且沒有兩個成員有同樣的小孩。
+   輸入格式
+      第一行為一個正整數n 代表 成員的個數， 每人以 0~n-1之間惟一的編號代表。 接著
+      的 n-1行 每行有兩個以一個空白隔開的整數 a與 b (0 ? a,b ? n- 代表 b是 a的
+      孩子 。
+   輸出格式
+      每筆測資輸出一行最遠"血緣距離 "的答案。
 */
 
+#include <stdio.h>
+#include <stdlib.h>
 
-int tree[99999][2]={{0}};//血緣關係樹(僅記錄親子關係)
+#define MAX 10000
 
-int n;
-int maxChildrenDistance=0;//從無孩子成員到無孩子成員的最遠關係
-int isChild[100000]={0};//判斷是否有父母(若無則為)
-int childrenCount[100000]={0};//記錄有多少孩子
+int tree[MAX][2]={{0}}; //血緣關係樹
+int maxD = 0;//最遠關係
+int n;//scanf
+int Child_NO[MAX] = {0};//判斷父母
+int isChild[MAX] = {0};//記錄孩子
 
-//深度優先搜尋，回傳深度（往下可到的最遠孩子距離）
-int dfs(int i)
-{
-    //如果沒有小孩(端點)
-    if(childrenCount[i]==0)
-    {
-        //由於沒有更深回傳0
-        return 0;
-    }
-    //如果只有一個小孩
-    else if(childrenCount[i]==1)
-    {
-        for(int j=0;j<n-1;++j)
-        {
-            if(tree[j][0]==i)
+
+int DFS(int x) {
+   if (Child_NO[x] == 0) return 0;//沒有小孩，遞迴中止
+
+   else if (Child_NO[x] == 1)
+   {
+        for(int j=0 ; j<n-1 ; j++)
+         {
+            if(tree[j][0]==x)
             {
-                //回傳小孩深度+1(孩子深度加自己)
-                return dfs(tree[j][1])+1;
+            return DFS(tree[j][1])+1;//回傳深度+1
             }
-        }
+         }
+
     }
-    //多個小孩
-    else
-    {
-        int max1=0,max2=0;//記錄i到無孩子成員最遠和第二遠
-        //搜尋所有節點i的小孩
-        for(int j=0;j<n-1;++j)
+   else 
+   {//小孩超過兩個以上
+      int max1=0 , max2 = 0 ;
+      for(int j=0 ; j<n-1 ; j++) 
+      {
+        if(tree[j][0]==x)
         {
-            if(tree[j][0]==i)
+            int dfsresult = DFS(tree[j][1])+1;
+            if (dfsresult > max1)
             {
-                //遞迴往下查找到無孩子成員的深度
-                int dfsResult=dfs(tree[j][1])+1;
-                //調整最遠和第二遠
-                if(dfsResult>max1)
-                {
-                    int temp=dfsResult;
-                    dfsResult=max1;
-                    max1=temp;
-                }
-                if(dfsResult>max2)
-                {
-                    max2=dfsResult;
-                }
+                int tmp = dfsresult;
+                dfsresult = max1;
+                max1 = tmp;
             }
+            if (dfsresult > max2) max2 = dfsresult;
         }
-        //如果最遠(假設為a節點)加第二遠(假設為b節點)比已知最遠無孩子成員到無孩子成員距離大
-        //表示a經過i到b為目前發現最遠的無孩子成員到無孩子距離
-        if((max1+max2)>maxChildrenDistance)
-        {
-            maxChildrenDistance=max1+max2;
-        }
-        return max1;
-    }
+      }
+      if(maxD<max1+max2) maxD = max1 + max2 ;
+      return max1;
+   }
 }
 
-int main()
-{
-    scanf(" %d",&n);
-    for(int i=0;i<n-1;++i)
+int main() {
+   scanf("%d", &n);
+    for (int i = 0; i<n-1; i++) 
     {
-        scanf(" %d %d",&tree[i][0],&tree[i][1]);
-        //計算有幾個小孩
-        childrenCount[tree[i][0]]+=1;
-        //記錄是否為其他人的小孩
-        isChild[tree[i][1]]=1;
+        scanf("%d %d", &tree[i][0], &tree[i][1]);
+        Child_NO[tree[i][0]]+=1;
+        isChild[tree[i][1]] = 1;
     }
+    int root;
 
-    //尋找祖先
-    int ancestor;
-    for(int i=0;i<n;++i)
+    //找出root
+    for (int i = 0; i < n; i++) 
     {
-        //如果不是其他人的小孩就是祖先
-        if(!isChild[i])
-        {
-            ancestor=i;
+        if (isChild[i]==0) 
+        {//只要不是小孩，就是root
+            root = i;
             break;
         }
     }
 
-    //開始計算深度（從祖先到最遠血緣距離小孩的距離）
-    int dfsResultFromRoot=dfs(ancestor);
-
-    //如果祖先到最遠血緣距離小孩的距離大於從無孩子成員到無孩子成員的最遠距離則輸出前者
-    if(dfsResultFromRoot>maxChildrenDistance)printf("%d",dfsResultFromRoot);
-    //如果祖先到最遠血緣距離小孩的距離小於從無孩子成員到無孩子成員的最遠距離則輸出後者
-    else printf("%d",maxChildrenDistance);
-    
+    int ResultRoot = DFS(root);
+    if(ResultRoot > maxD) printf("%d",ResultRoot);
+    else printf("%d", maxD);
+      
     return 0;
 }
