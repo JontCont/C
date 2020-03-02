@@ -8,8 +8,7 @@ void Table(void)
 		for(j = 0; j <= 9;j++,printf("\n"))
 			for(k=i;k < i+5;k++)
                 printf("%2d x %1d = %2d ",k,j,k*j);
-
-				
+			
 }
 
 int main(void)
