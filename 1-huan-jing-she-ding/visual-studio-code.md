@@ -20,5 +20,11 @@ C/C++ : [https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools]
 
 ![](../.gitbook/assets/image%20%281%29.png)
 
+安裝完之後就剩下處理Debugger的問題了。
+
+## Debugger
+
+
+
 
 
