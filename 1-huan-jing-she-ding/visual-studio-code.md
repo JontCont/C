@@ -46,5 +46,78 @@ int main(int argc, char const *argv[])
 }
 ```
 
+會出現下圖部分，選擇有GDB部分後，會出現gcc.exe，選擇第一個。
+
+![&#xFF11;&#xFF0E;&#x8A2D;&#x5B9A;&#xFF0D;&#xFF26;&#xFF15;&#x5F8C;&#x9078;&#x64C7;&#x7B2C;&#x4E00;&#x500B;&#x9078;&#x9805;](../.gitbook/assets/image%20%285%29.png)
+
+![&#xFF12;&#xFF0E;&#x8A2D;&#x5B9A;&#xFF0D;&#x9078;&#x64C7;&#x7B2C;&#x4E00;&#x500B;&#x9078;&#x9805;](../.gitbook/assets/image%20%286%29.png)
+
+之後會自動跑出 .vscode資料夾。要修改為＂launch.json＂。修改如下
+
+```text
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "gcc.exe - 建置及偵錯使用中的檔案",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}\\${fileBasenameNoExtension}.exe", //修改成${workspaceFolder}
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": true, //修改true
+            "MIMode": "gdb",
+            "miDebuggerPath": "C:\\MinGW\\bin\\gdb.exe", //確認MinGW路徑
+            "setupCommands": [
+                {
+                    "description": "啟用 gdb 的美化顯示",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "C/C++: gcc.exe build active file"
+        }
+    ]
+}
+```
+
+修改後，在按下Ｆ５就會跑出來了。
+
+![](../.gitbook/assets/image%20%287%29.png)
+
+如果跑出　＂tasks.json＂　設定，如下：
+
+```text
+    {
+    // See https://go.microsoft.com/fwlink/?LinkId=733558 
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+    {
+        "type": "shell",
+        "label": "gcc.exe build active file",
+        "command": "C:\\MinGW\\bin\\gcc.exe",
+        "args": [
+            "-g",
+            "${file}",
+            "-o",
+            "${workspaceFolder}\\a.exe"
+        ],
+        "options": {
+            "cwd": "C:\\MinGW\\bin"
+        },
+        "problemMatcher": [
+            "$gcc"
+        ],
+        "group": "build"
+    }
+]
+```
+
 
 
