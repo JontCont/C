@@ -34,7 +34,7 @@ C/C++ : [https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools]
 
 ![](../.gitbook/assets/image%20%283%29.png)
 
-範例如下。
+範例如下，在第四行中，點入中斷點再來按下 F5。
 
 ```text
 #include<stdio.h>
@@ -45,4 +45,6 @@ int main(int argc, char const *argv[])
     return 0;
 }
 ```
+
+
 
