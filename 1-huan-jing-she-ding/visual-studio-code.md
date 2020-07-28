@@ -30,3 +30,19 @@ C/C++ : [https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools]
 
 
 
+在新增已經新增的資料夾上新增ex01.c ，再輸程式碼。
+
+![](../.gitbook/assets/image%20%283%29.png)
+
+範例如下。
+
+```text
+#include<stdio.h>
+
+int main(int argc, char const *argv[])
+{
+    print("Hello world !!");
+    return 0;
+}
+```
+
