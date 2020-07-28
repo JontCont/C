@@ -1,12 +1,12 @@
-# 使用方式
+# 1-1 使用方式
 
 ## MinGW
 
 使用[MinGW](http://www.mingw.org/)下載點， 若要在Windows下執行GCC，安裝完成後需要設定windows環境變數， 設定方法`由控制台→系統→進階系統設定→進階(Label)→環境變數`。
 
-![&#x5230;&#x63A7;&#x5236;&#x53F0;&#x9EDE;&#x5165;&#x9032;&#x968E;&#x7CFB;&#x7D71;&#x8A2D;&#x5B9A;](../.gitbook/assets/image%20%2810%29.png)
+![&#x5230;&#x63A7;&#x5236;&#x53F0;&#x9EDE;&#x5165;&#x9032;&#x968E;&#x7CFB;&#x7D71;&#x8A2D;&#x5B9A;](../.gitbook/assets/image%20%2812%29.png)
 
-![&#x4F9D;&#x64DA;&#x9806;&#x5E8F;&#x3000;&#x74B0;&#x5883;&#x8A2D;&#x5B9A; &amp;gt; Path &amp;gt; &#x7DE8;&#x8F2F; &#x5728;&#x8A2D;&#x5B9A;&#x4E0B;&#x65B9;&#x5716;&#x793A;](../.gitbook/assets/image%20%289%29.png)
+![&#x4F9D;&#x64DA;&#x9806;&#x5E8F;&#x3000;&#x74B0;&#x5883;&#x8A2D;&#x5B9A; &amp;gt; Path &amp;gt; &#x7DE8;&#x8F2F; &#x5728;&#x8A2D;&#x5B9A;&#x4E0B;&#x65B9;&#x5716;&#x793A;](../.gitbook/assets/image%20%2810%29.png)
 
  於下方系統變數裡找到 path 這個環境變數，再按下面的編輯， 結尾部分加上：
 

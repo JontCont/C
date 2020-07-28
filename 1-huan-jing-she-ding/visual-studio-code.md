@@ -1,4 +1,4 @@
-# Visual Studio Code
+# 1-2 Visual Studio Code
 
 ### Visual Studio Code 優點：
 
