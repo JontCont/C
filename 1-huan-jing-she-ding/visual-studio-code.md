@@ -24,7 +24,9 @@ C/C++ : [https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools]
 
 ## Debugger
 
+首先，開啟VScode 開啟新的資料夾\(Folder\)
 
+![](../.gitbook/assets/image%20%282%29.png)
 
 
 
