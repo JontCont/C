@@ -14,7 +14,7 @@ integer 分成三部分。 int\(整數\) 、long \(長整數\) 、short\(短整�
 
 ## C11特性
 
-* 對齊處理（Alignment）的標準化（包括`_Alignas`標誌符，`alignof`[運算子](https://zh.wikipedia.org/wiki/%E8%BF%90%E7%AE%97%E7%AC%A6)，`aligned_alloc`[函式](https://zh.wikipedia.org/wiki/%E5%87%BD%E6%95%B0)以及`<stdalign.h>`[標頭檔](https://zh.wikipedia.org/wiki/%E5%A4%B4%E6%96%87%E4%BB%B6)）。
+* 對齊處理（Alignment）的標準化 （包括`_Alignas`標誌符，`alignof`[運算子](https://zh.wikipedia.org/wiki/%E8%BF%90%E7%AE%97%E7%AC%A6)，`aligned_alloc`[函式](https://zh.wikipedia.org/wiki/%E5%87%BD%E6%95%B0)以及`<stdalign.h>`[標頭檔](https://zh.wikipedia.org/wiki/%E5%A4%B4%E6%96%87%E4%BB%B6)）。
 * `_Noreturn` 函式標記，類似於 gcc 的 `__attribute__((noreturn))`。
 * `_Generic` [泛型](https://zh.wikipedia.org/wiki/%E6%B3%9B%E5%9E%8B)巨集關鍵字。
 * [多執行緒](https://zh.wikipedia.org/wiki/%E5%A4%9A%E7%BA%BF%E7%A8%8B)（Multithreading）支援，包括：
