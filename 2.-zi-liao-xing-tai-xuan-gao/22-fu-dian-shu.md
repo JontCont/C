@@ -14,7 +14,11 @@
 
 宣告
 
-
+![](../.gitbook/assets/image%20%2813%29.png)
 
 陣列\(array\)
+
+![](../.gitbook/assets/image%20%2815%29.png)
+
+算法如同 integer 章節 ，請自行測試。
 
