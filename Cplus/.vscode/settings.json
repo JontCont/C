@@ -1,0 +1,16 @@
+{
+    "files.associations": {
+        "algorithm": "c",
+        "xstring": "c",
+        "xutility": "c",
+        "stdlib.h": "c",
+        "system_error": "c",
+        "stdio.h": "c",
+        "Sort.h": "c",
+        "string.h": "c",
+        "cstdio": "cpp",
+        "cstdlib": "cpp",
+        "iostream": "cpp",
+        "ostream": "cpp"
+    }
+}

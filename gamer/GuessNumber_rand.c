@@ -1,7 +1,7 @@
 #include <stdio.h>
-#include <time.h>
+#include <time.h> 
 #include <stdlib.h>
-#include <string.h>
+//#include <string.h>
 
 void showrlue()
 {
@@ -19,7 +19,7 @@ void main(void){
     int div_num = 1,Num=4;
     int Y,I;
     showrlue();
-
+	//隨機亂數//
 	srand((unsigned)time(NULL));
     for (i = 0; i < 4; i++)
 	{
@@ -31,8 +31,8 @@ void main(void){
 				a[i]=(rand() % 9)+0;
 			}
 	}
-
-    for(round=1 ; round <= 12 ; round++)
+	//----------------------------
+    for(round=1 ; round <= 12 ; round++) //回合限制
     {
         printf("Enter guess number (Limit four numbers, can't repeat):");
         scanf("%d", &guess);
@@ -64,6 +64,5 @@ void main(void){
 			printf("\n");
 		}
     
-
     system("pause");
 }
