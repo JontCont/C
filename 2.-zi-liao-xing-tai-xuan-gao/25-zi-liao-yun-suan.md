@@ -84,27 +84,125 @@ int main(int argc, char const *argv[])
 | \|\| | 二元運算 | 兩邊關係其中是否有成立 |
 | ! | 一元運算 | 關係運算式的否定 |
 
-
-
-
-
 ## 位元運算
 
+![&#x6578;&#x4F4D;&#x908F;&#x8F2F;](../.gitbook/assets/image%20%2822%29.png)
+
+上圖為數位邏輯\(Gate 的輸出結果\)， a、b 為輸入，則 y 為輸出結果。
 
 
 
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">&#x904B;&#x7B97;&#x5B50;</th>
+      <th style="text-align:center">&#x5E7E;&#x5143;&#x904B;&#x7B97;&#x5B50;</th>
+      <th style="text-align:left">&#x4F5C;&#x7528;</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">&amp;</td>
+      <td style="text-align:center">&#x4E8C;&#x5143;&#x904B;&#x7B97;</td>
+      <td style="text-align:left">
+        <p>&#x5169;&#x500B;&#x6578;&#x503C;&#x6703;&#x4EE5;&#x4E8C;&#x9032;&#x503C;
+          <br
+          />&#x4F86;&#x57F7;&#x884C; (AND)</p>
+        <p></p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">|</td>
+      <td style="text-align:center">&#x4E8C;&#x5143;&#x904B;&#x7B97;</td>
+      <td style="text-align:left">&#x5169;&#x500B;&#x6578;&#x503C;&#x6703;&#x4EE5;&#x4E8C;&#x9032;&#x503C;
+        <br
+        />&#x4F86;&#x57F7;&#x884C; (OR)</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">^</td>
+      <td style="text-align:center">&#x4E8C;&#x5143;&#x904B;&#x7B97;</td>
+      <td style="text-align:left">&#x5169;&#x500B;&#x6578;&#x503C;&#x6703;&#x4EE5;&#x4E8C;&#x9032;&#x503C;
+        <br
+        />&#x4F86;&#x57F7;&#x884C; (XOR)</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">~</td>
+      <td style="text-align:center">&#x4E00;&#x5143;&#x904B;&#x7B97;</td>
+      <td style="text-align:left">&#x5169;&#x500B;&#x6578;&#x503C;&#x6703;&#x4EE5;&#x4E8C;&#x9032;&#x503C;
+        <br
+        />&#x4F86;&#x57F7;&#x884C; (NOT)</td>
+    </tr>
+  </tbody>
+</table>
+
+執行結果會如同上圖結果一樣，自行測試。
 
 
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">&#x904B;&#x7B97;&#x5B50;</th>
+      <th style="text-align:center">&#x5E7E;&#x5143;&#x904B;&#x7B97;&#x5B50;</th>
+      <th style="text-align:left">&#x4F5C;&#x7528;</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">&lt;&lt;</td>
+      <td style="text-align:center">&#x4E8C;&#x5143;&#x904B;&#x7B97;</td>
+      <td style="text-align:left">
+        <p>&#x4E00;&#x500B;&#x4E8C;&#x9032;&#x5236;&#x6578;&#x5B57;&#x5DE6;&#x79FB;N&#x4F4D;&#x5143;</p>
+        <p></p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">&gt;&gt;</td>
+      <td style="text-align:center">&#x4E8C;&#x5143;&#x904B;&#x7B97;</td>
+      <td style="text-align:left">&#x4E00;&#x500B;&#x4E8C;&#x9032;&#x5236;&#x6578;&#x5B57;&#x5DE6;&#x79FB;N&#x4F4D;&#x5143;</td>
+    </tr>
+  </tbody>
+</table>
+
+```text
+#include <stdlib.h>
+#include <stdio.h>
+
+int main(int argc, char const *argv[])
+{
+    int i = 15;
+    int y = 2;
+    printf("i >> y = %d\n",(i>>y));    
+    printf("i << y = %d\n",(i<<y));    
+
+    system("PAUSE");
+    return 0;
+}
+
+```
 
 ## 優先順序
 
-
-
-
-
-
+![](../.gitbook/assets/image%20%2823%29.png)
 
 
 
 ## 資料型態轉換
+
+### 自動型態轉換
+
+double &gt; float &gt; int &gt; char
+
+`char c= 'a'  
+int i =10   
+float f=3.6  
+double b = c + i+ f;` 
+
+### 強制轉換型態
+
+`int a,b,c;  
+float avg;  
+avg =(float)(a+b+c)/3;`
+
+
 
