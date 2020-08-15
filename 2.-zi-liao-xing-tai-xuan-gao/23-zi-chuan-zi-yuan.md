@@ -26,7 +26,7 @@ C語言必須要 strcmp\(\) strcpy\(\) strlen\(\) 其他相關函式完成的。
 
 ## 補充
 
-跳脫
+跳脫字元
 
 ![](../.gitbook/assets/image%20%2821%29.png)
 
