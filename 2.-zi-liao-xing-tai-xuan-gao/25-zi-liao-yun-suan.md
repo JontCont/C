@@ -43,7 +43,9 @@ i = x ;
 
 ### 練習
 
-```text
+{% tabs %}
+{% tab title="C" %}
+```c
 #include <stdlib.h>
 #include <stdio.h>
 
@@ -59,6 +61,8 @@ int main(int argc, char const *argv[])
     return 0;
 }
 ```
+{% endtab %}
+{% endtabs %}
 
 ## 比較運算子
 
@@ -164,7 +168,9 @@ int main(int argc, char const *argv[])
   </tbody>
 </table>
 
-```text
+{% tabs %}
+{% tab title="C" %}
+```c
 #include <stdlib.h>
 #include <stdio.h>
 
@@ -180,6 +186,8 @@ int main(int argc, char const *argv[])
 }
 
 ```
+{% endtab %}
+{% endtabs %}
 
 ## 優先順序
 
@@ -191,7 +199,9 @@ int main(int argc, char const *argv[])
 
 ### 自動型態轉換
 
-double &gt; float &gt; int &gt; char
+{% hint style="info" %}
+**說明**  :  double &gt; float &gt; int &gt; char
+{% endhint %}
 
 `char c= 'a'  
 int i =10   

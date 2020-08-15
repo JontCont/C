@@ -8,8 +8,8 @@
 
 ### 1. 寫一個長方形面積 
 
-### C 
-
+{% tabs %}
+{% tab title="C " %}
 ```c
 #include <stdio.h>
 #include <stdlib.h>
@@ -24,11 +24,11 @@ int main(int argc, char const *argv[])
     system("PAUSE");
     return 0;
 }
-
+\
 ```
+{% endtab %}
 
-### C++
-
+{% tab title="C++" %}
 ```cpp
 #include <iostream>
 #include <cstdio>
@@ -44,15 +44,16 @@ int main(int argc, char const *argv[])
     system("PAUSE");
     return 0;
 }
-
 ```
+{% endtab %}
+{% endtabs %}
 
 ### 2. BMI 
 
  **BMI值計算公式:**    BMI = 體重\(公斤\) / 身高2\(公尺2\)
 
-C
-
+{% tabs %}
+{% tab title="C" %}
 ```c
 #include <stdio.h>
 #include <stdlib.h>
@@ -72,9 +73,9 @@ int main(int argc, char const *argv[])
 
 
 ```
+{% endtab %}
 
-C++
-
+{% tab title="C++" %}
 ```cpp
 #include <iostream>
 #include <cstdio>
@@ -95,6 +96,8 @@ int main(int argc, char const *argv[])
 }
 
 ```
+{% endtab %}
+{% endtabs %}
 
 ## 輸出格式化數字
 
