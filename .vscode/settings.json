@@ -1,9 +1,0 @@
-{
-    "files.associations": {
-        "algorithm": "c",
-        "xstring": "c",
-        "xutility": "c",
-        "stdlib.h": "c",
-        "system_error": "c"
-    }
-}
