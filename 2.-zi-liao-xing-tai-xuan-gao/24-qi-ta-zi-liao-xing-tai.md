@@ -8,7 +8,7 @@
 
 下方程式，測試 bool  0 / 1 是怎樣判別 true 與 false
 
-```text
+```c
 #include <stdlib.h>
 #include <stdio.h>
 #include <stdbool.h>

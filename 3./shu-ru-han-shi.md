@@ -10,7 +10,7 @@
 
 ### C 
 
-```text
+```c
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -29,7 +29,7 @@ int main(int argc, char const *argv[])
 
 ### C++
 
-```text
+```cpp
 #include <iostream>
 #include <cstdio>
 #include <cstdlib>
@@ -53,7 +53,7 @@ int main(int argc, char const *argv[])
 
 C
 
-```text
+```c
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -75,7 +75,7 @@ int main(int argc, char const *argv[])
 
 C++
 
-```text
+```cpp
 #include <iostream>
 #include <cstdio>
 #include <cstdlib>
@@ -100,7 +100,7 @@ int main(int argc, char const *argv[])
 
 C/C++ 中，Printf\(\) 格式字串中，可以在% 與  d 中間加入數字。此數字表示欄寬\(field width\)，是顯示數值行數。
 
-```text
+```c
 printf("Int out number = %3d \n", inches);
 ```
 
