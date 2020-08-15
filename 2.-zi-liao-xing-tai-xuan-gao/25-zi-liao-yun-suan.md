@@ -86,7 +86,7 @@ int main(int argc, char const *argv[])
 
 ## 位元運算
 
-![&#x6578;&#x4F4D;&#x908F;&#x8F2F;](../.gitbook/assets/image%20%2822%29.png)
+![&#x6578;&#x4F4D;&#x908F;&#x8F2F;](../.gitbook/assets/image%20%2824%29.png)
 
 上圖為數位邏輯\(Gate 的輸出結果\)， a、b 為輸入，則 y 為輸出結果。
 
@@ -183,7 +183,7 @@ int main(int argc, char const *argv[])
 
 ## 優先順序
 
-![](../.gitbook/assets/image%20%2823%29.png)
+![](../.gitbook/assets/image%20%2825%29.png)
 
 
 
