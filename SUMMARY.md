@@ -12,10 +12,7 @@
   * [2-4 其他資料型態](2.-zi-liao-xing-tai-xuan-gao/24-qi-ta-zi-liao-xing-tai.md)
   * [2-5 資料運算](2.-zi-liao-xing-tai-xuan-gao/25-zi-liao-yun-suan.md)
 * [3.變數宣告](3./README.md)
-  * [輸入函式](3./shu-ru-han-shi.md)
+  * [輸出函式](3./shu-ru-han-shi.md)
+  * [輸入函式](3./shu-ru-han-shi-1.md)
 * [Untitled](untitled.md)
-* [cplusplus](cplus.md)
-* [example](example/README.md)
-  * [linux](example/linux/README.md)
-    * [�ϥ�ar���O](example/linux/use_caption.md)
 
