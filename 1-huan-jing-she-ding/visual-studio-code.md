@@ -1,14 +1,14 @@
 # 1-2 Visual Studio Code
 
-### Visual Studio Code 優點：
+> ## Visual Studio Code 優點：
 
-1. 可擴充 Git  
-2. 多樣性 - 具有不同外掛可以做使用  
-3. 語言種類 \(可能遇到部分語言沒有外掛擴充\)  
-4. 靈活度  
-5. Debugger
+#### 1. 可擴充 Git 2. 多樣性 - 具有不同外掛可以做使用 3. 語言種類 \(可能遇到部分語言沒有外掛擴充\) 4. 靈活度 5. Debugger
 
-## Extensions 
+
+
+## 
+
+> ## Extensions
 
 Visual Studio Code 最大特點就是可以有多項化的外掛可以去做安裝到 vs code。  
 下方會有連結可以去點擊參閱
@@ -22,7 +22,11 @@ C/C++ : [https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools]
 
 安裝完之後就剩下處理Debugger的問題了。
 
-## Debugger
+
+
+## 
+
+> ## Debugger
 
 首先，開啟VScode 開啟新的資料夾\(Folder\)
 
@@ -36,7 +40,7 @@ C/C++ : [https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools]
 
 範例如下，在第四行中，點入中斷點再來按下 F5。
 
-```text
+```c
 #include<stdio.h>
 
 int main(int argc, char const *argv[])
@@ -54,7 +58,7 @@ int main(int argc, char const *argv[])
 
 之後會自動跑出 .vscode資料夾。要修改為＂launch.json＂。修改如下
 
-```text
+```bash
 {
     // Use IntelliSense to learn about possible attributes.
     // Hover to view descriptions of existing attributes.
@@ -92,7 +96,7 @@ int main(int argc, char const *argv[])
 
 如果跑出　＂tasks.json＂　設定，如下：
 
-```text
+```bash
     {
     // See https://go.microsoft.com/fwlink/?LinkId=733558 
     // for the documentation about the tasks.json format
