@@ -1,0 +1,15 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\Directory\shell\git_shell]
+@="Git Ba&sh Here"
+"Icon"="c:\\Program Files\\Git\\git-bash.exe"
+
+[HKEY_CLASSES_ROOT\Directory\shell\git_shell\command]
+@="\"c:\\Program Files\\Git\\git-bash.exe\" \"--cd=%1\""
+
+[HKEY_CLASSES_ROOT\Directory\shell\git_gui]
+@="Git &GUI Here"
+"Icon"="c:\\Program Files\\Git\\cmd\\git-gui.exe"
+
+[HKEY_CLASSES_ROOT\Directory\shell\git_gui\command]
+@="\"c:\\Program Files\\Git\\cmd\\git-gui.exe\" \"--working-dir\" \"%1\""
