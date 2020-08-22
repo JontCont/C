@@ -173,11 +173,15 @@ int main()
 
 {% tabs %}
 {% tab title="C" %}
+```text
 
+```
 {% endtab %}
 
 {% tab title="C++" %}
+```text
 
+```
 {% endtab %}
 {% endtabs %}
 
