@@ -1,6 +1,8 @@
-# 選擇結構
+---
+description: 程式運行模式有三種運作模式
+---
 
-程式運行模式有三種運作模式 ：
+# 選擇結構
 
 ## 順序結構（Sequence structure）
 
@@ -132,7 +134,23 @@ int main()
 
 {% tabs %}
 {% tab title="C" %}
+```c
+#include <stdio.h>
+#include <stdlib.h>
+int main()
+{
+    int score;
+    printf("輸入成績:");
+    scanf("%d",&score);
 
+    if(score>=60)
+        printf("及格");
+    else
+        printf("不及格");
+    
+    return 0;
+}
+```
 {% endtab %}
 
 {% tab title="C++" %}
@@ -147,7 +165,7 @@ int main()
     cout << "輸入成績";
     cin >> score;
 
-    if (score < 60)
+    if (score >= 60)
     {
         cout << "及格";
     }
