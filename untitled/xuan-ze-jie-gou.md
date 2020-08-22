@@ -59,7 +59,7 @@ int main(int argc, char const *argv[])
 {% endtab %}
 {% endtabs %}
 
-2. 假設某家餐廳消費一客400元，持VIP打9折，無VIP則無打折，輸入持有VIP以及消費人數，在打印消費金額
+ 2. 假設某家餐廳消費一客400元，持VIP打9折，無VIP則無打折，輸入持有VIP以及消費人數，在打印消費金額
 
 {% tabs %}
 {% tab title="C" %}
@@ -126,6 +126,43 @@ int main()
 
 ![](../.gitbook/assets/image%20%2827%29.png)
 
+
+
+1. 假設輸入成績及格為60分，若有及格都會顯示及格 ，其餘不及格。
+
+{% tabs %}
+{% tab title="C" %}
+
+{% endtab %}
+
+{% tab title="C++" %}
+```cpp
+#include <iostream>
+#include <cstdlib>
+using namespace std;
+
+int main()
+{
+    int score;
+    cout << "輸入成績";
+    cin >> score;
+
+    if (score < 60)
+    {
+        cout << "及格";
+    }
+    else
+    {
+        cout << "不及格";
+    }
+
+    system("PAUSE");
+    return 0;
+}
+```
+{% endtab %}
+{% endtabs %}
+
 ### **3. 多重選擇**
 
 如果狀況有極多得可能，或是想輸出不同資料時候。
@@ -133,6 +170,16 @@ int main()
 **例如：**if...else if...else、switch
 
 ![](../.gitbook/assets/image%20%2828%29.png)
+
+{% tabs %}
+{% tab title="C" %}
+
+{% endtab %}
+
+{% tab title="C++" %}
+
+{% endtab %}
+{% endtabs %}
 
 \*\*\*\*
 
