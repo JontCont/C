@@ -19,11 +19,11 @@
 
 ### 範例
 
-假設小名考80，有及格都會顯示及格。
+1. 假設小名考80，有及格都會顯示及格。
 
 {% tabs %}
 {% tab title="C" %}
-```text
+```c
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -40,7 +40,7 @@ int main(int argc, char const *argv[])
 {% endtab %}
 
 {% tab title="C++" %}
-```text
+```cpp
 #include <iostream>
 #include <cstdlib>
 
@@ -55,6 +55,45 @@ int main(int argc, char const *argv[])
     return 0;
 }
 
+```
+{% endtab %}
+{% endtabs %}
+
+2. 假設某家餐廳消費一客400元，持VIP打9折，無VIP則無打折，輸入持有VIP以及消費人數，在打印消費金額
+
+{% tabs %}
+{% tab title="C" %}
+```text
+
+```
+{% endtab %}
+
+{% tab title="C++" %}
+```cpp
+#include <iostream>
+#include <cstdlib>
+using namespace std;
+
+int main()
+{
+    float consum = 400;  //消費
+    float discont = 0.9; //vip 9折
+    int vip_option = 0;  // 選項
+    int count = 0;
+    cout << "持VIP(1 有VIP , 2 無) :";
+    cin >> vip_option;
+
+    cout << "消費人數 :";
+    cin >> count;
+    consum = consum * count;
+    if (vip_option == 1)
+    {
+        consum = (consum * discont);
+    }
+    cout << "消費金額 : " << consum;
+    system("PAUSE");
+    return 0;
+}
 ```
 {% endtab %}
 {% endtabs %}
