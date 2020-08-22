@@ -63,8 +63,30 @@ int main(int argc, char const *argv[])
 
 {% tabs %}
 {% tab title="C" %}
-```text
+```c
+#include <stdlib.h>
+#include <stdio.h>
+using namespace std;
+int main() 
+{
+    float consum = 400;
+    float discount = 0.9;
+    int vipoption = 0 ;
+    int people = 0;
 
+    printf("持有vip卡(1:持有 2:無");
+    scanf("%d",&vipoption);
+    
+    printf("消費人數");
+    scanf("%d",&people);
+    consum = consum * people;
+    if(vipoption ==1)
+        {
+            consum = (consum*discount);
+        }
+    printf("消費金額 = %.0f",consum);
+    return 0;
+}
 ```
 {% endtab %}
 
