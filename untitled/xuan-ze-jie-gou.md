@@ -288,6 +288,9 @@ int main()
     case 6:
         printf("D");
         break;
+    default:
+        printf("F");
+        break;
     }
     
     return 0;
