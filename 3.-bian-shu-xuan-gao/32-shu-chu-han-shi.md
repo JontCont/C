@@ -2,7 +2,7 @@
 
 在執行過程中，命令管理員\(Command\)遇到亂碼之類的時候，打上`chcp 65001` 轉 UTF-8 可以解決 中文亂碼問題。
 
-![Command](../.gitbook/assets/image%20%2823%29.png)
+![cmd](../.gitbook/assets/image%20%2832%29.png)
 
 ### 練習
 
