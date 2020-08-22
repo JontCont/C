@@ -15,7 +15,49 @@
 **這個特性是只有一種狀況，可以使用這方式寫。  
 例如：if**
 
-![](../.gitbook/assets/image%20%2829%29.png)
+![Selection Structure](../.gitbook/assets/image%20%2829%29.png)
+
+### 範例
+
+假設小名考80，有及格都會顯示及格。
+
+{% tabs %}
+{% tab title="C" %}
+```text
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(int argc, char const *argv[])
+{
+    int score = 80;
+
+    if(score>60){
+        printf("及格");
+    }
+    return 0;
+}
+```
+{% endtab %}
+
+{% tab title="C++" %}
+```text
+#include <iostream>
+#include <cstdlib>
+
+int main(int argc, char const *argv[])
+{
+    int score = 80;
+
+    if(score>60){
+        std::cout<< "及格";
+    }
+    system("PAUSE");
+    return 0;
+}
+
+```
+{% endtab %}
+{% endtabs %}
 
 ### **2. 雙重選擇**
 
