@@ -264,7 +264,35 @@ int main()
 
 {% tabs %}
 {% tab title="C" %}
-
+```c
+#include <stdio.h>
+#include <stdlib.h>
+int main()
+{
+    int score;
+    printf("輸入成績:");
+    scanf("%d",&score);
+    
+    switch (score/10)
+    {
+    case 9:
+    case 10:
+        printf("A");
+        break;
+    case 8:
+        printf("B");
+        break;
+    case 7:
+        printf("C");
+        break;
+    case 6:
+        printf("D");
+        break;
+    }
+    
+    return 0;
+}
+```
 {% endtab %}
 
 {% tab title="C++" %}
