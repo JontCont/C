@@ -17,6 +17,7 @@
 * [4. 程式主要結構](untitled/README.md)
   * [選擇結構](untitled/xuan-ze-jie-gou.md)
   * [迴圈結構](untitled/hui-quan-jie-gou.md)
+  * [Break、Continue敘述](untitled/breakcontinue-xu-shu.md)
 * [5. 陣列](5.-zhen-lie/README.md)
   * [一維陣列](5.-zhen-lie/yi-wei-zhen-lie.md)
   * [二維陣列](5.-zhen-lie/er-wei-zhen-lie.md)
