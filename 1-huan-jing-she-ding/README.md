@@ -14,3 +14,9 @@
 
 
 
+## 其他GIT Brash 環境設定
+
+### 按此連結 =&gt;   [C&C++搭建环境——命令行IDE：git+MinGW](https://blog.csdn.net/zxng_work/article/details/78515486#%E4%B8%8B%E8%BD%BD%E5%AE%89%E8%A3%85git%E4%B8%8Emingw)
+
+
+
