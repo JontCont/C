@@ -55,10 +55,7 @@ int * const foo; // 一個 const pointer，指向 int 變數。
 int const * const foo; // 一個 const pointer，指向 const int 變數。
 ```
 
-## 傳值 call by value,、傳址 call by reference\(address\)
-
-1. call by value  傳值 : 最常見的函式寫法，呼叫者和被呼叫者的變數各自佔有記憶體，將參數複製再傳給函式，而 **C語言目前只有這個功能**。
-2. call by reference 傳址 : 呼叫者和被呼叫者的變數使用相同的記憶體位址，因此在被呼叫函式中改變變數時，變動結果會保留。\(C++ 才有，寫法為 type func\(type &var\) { ... }\)
+## 
 
 
 
@@ -80,7 +77,7 @@ static 變數只有宣告的檔案可以使用；而 global 變數可加上 exte
 * Heap : 一般由程式設計師分配釋放，執行時才會知道配置大小，如 malloc/new 和 free/delete。\(注意其資料結構不是 DS 中的 heap 而是 link-list\)
 * Global : 包含 BSS \(未初始化的靜態變數\)、data section \(全域變數、靜態變數\) 和 text/code \(常數字元\)。
 
-![](.gitbook/assets/image%20%2835%29.png)
+![](../.gitbook/assets/image%20%2835%29.png)
 
 ### 配置練習
 
