@@ -24,6 +24,8 @@
 
 VisuAlgo =&gt; [https://visualgo.net/en](https://visualgo.net/en)
 
+CGI = &gt; [https://dangerlover9403.pixnet.net/blog/post/175715499-%5B%E6%95%99%E5%AD%B8%5D-apache---cgi---c-\(read-file\)](https://dangerlover9403.pixnet.net/blog/post/175715499-%5B%E6%95%99%E5%AD%B8%5D-apache---cgi---c-%28read-file%29)
+
 
 
 
