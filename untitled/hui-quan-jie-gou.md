@@ -24,11 +24,38 @@ for
 
 {% tabs %}
 {% tab title="C" %}
+```c
+#include <stdio.h>
+#include <stdlib.h>
 
+int main(int argc, char const *argv[])
+{
+    int sum = 0;
+    for (int i = 1; i < 6; i++)
+    {
+        sum += i;
+    }
+    printf("%d", sum);
+    return 0;
+}
+
+```
 {% endtab %}
 
 {% tab title="C++" %}
+```cpp
+int main(int argc, char const *argv[])
+{
+    int sum = 0;
+    for (int i = 1; i < 6; i++)
+    {
+        sum += i;
+    }
+    cout<<sum;
+    return 0;
+}
 
+```
 {% endtab %}
 {% endtabs %}
 
@@ -36,11 +63,53 @@ for
 
 {% tabs %}
 {% tab title="C" %}
+```c
+#include <stdio.h>
+#include <stdlib.h>
 
+int main(int argc, char const *argv[])
+{
+    int count,score,sum = 0;
+    float avg = 0;
+    printf("請輸入幾科");
+    scanf("%d",&count);
+    printf("請輸入分數");
+    for(int i =0;i<count;i++)
+    {
+        scanf("%d",&score);
+        sum += score;
+    }
+    avg =(float) sum/count;
+    printf("總成績 %d",sum);
+    printf("平均 %.1f",avg);
+
+    return 0;
+}
+
+```
 {% endtab %}
 
 {% tab title="C++" %}
+```cpp
+int main(int argc, char const *argv[])
+{
+    int count,score,sum = 0;
+    float avg = 0;
+    cout<<"請輸入幾科";
+    cin>>count;
+    cout<<"請輸入分數";
+    for(int i =0;i<count;i++)
+    {
+        scanf("%d",&score);
+        sum += score;
+    }
+    avg =(float) sum/count;
+    cout<<"總成績 %d"<<sum;
+    cout<<"平均 %.1f"<<avg;
 
+    return 0;
+}
+```
 {% endtab %}
 {% endtabs %}
 
