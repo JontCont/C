@@ -32,6 +32,8 @@ CGI
 
 #### =&gt; [https://bluelove1968.pixnet.net/blog/post/222286543](https://bluelove1968.pixnet.net/blog/post/222286543)
 
+#### =&gt; [http://ccckmit.wikidot.com/cgi:escape](http://ccckmit.wikidot.com/cgi:escape)
+
 
 
 
