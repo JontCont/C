@@ -29,6 +29,7 @@
   * [生命週期](6.-zhi-biao/sheng-ming-zhou-qi.md)
   * [關鍵字](6.-zhi-biao/guan-jian-zi.md)
   * [前處理器相關](6.-zhi-biao/qian-chu-li-qi-xiang-guan.md)
+  * [未定義行為 \(Undefined behavior\)](6.-zhi-biao/wei-ding-yi-hang-wei-undefined-behavior.md)
 * [7. 自訂函式/副程式](7.-zi-ding-han-shi-fu-cheng-shi.md)
 * [8. 內/外 部變數](8.-nei-wai-bu-bian-shu/README.md)
   * [暫存器變數](8.-nei-wai-bu-bian-shu/zan-cun-qi-bian-shu.md)
