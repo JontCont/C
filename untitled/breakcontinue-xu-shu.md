@@ -13,11 +13,11 @@ break 敘述除了在 switch 的選擇結構外，可以使用在迴圈結構。
 #### 1.模擬密碼驗證\(假設密碼 : 123456\)，最多可以錯三次密碼。
 
 {% tabs %}
-{% tab title="C" %}
+{% tab title="First Tab" %}
 
 {% endtab %}
 
-{% tab title="C++" %}
+{% tab title="Second Tab" %}
 
 {% endtab %}
 {% endtabs %}
