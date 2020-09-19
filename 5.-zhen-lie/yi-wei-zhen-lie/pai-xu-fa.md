@@ -18,7 +18,7 @@
 {% endtab %}
 {% endtabs %}
 
-資料搜尋
+### 資料搜尋
 
 線性搜尋法 - Sequential Search
 
