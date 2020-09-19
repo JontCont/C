@@ -19,6 +19,12 @@ int *ptr = &var;
 * & ：取變數位址
 * \*  ： 表示為指標變數
 
+{% hint style="info" %}
+取址運算子\(作用在變數名稱前\)
+
+& 變數名稱
+{% endhint %}
+
   
 也可用於函數變為函式指標 \(function pointer\)，語法為
 
