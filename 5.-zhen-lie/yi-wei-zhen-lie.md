@@ -72,3 +72,5 @@ char arrayname[長度 +1] = "字串內容";
 char arrayname [長度+1] ={'字元1','字元2'...}
 ```
 
+
+
