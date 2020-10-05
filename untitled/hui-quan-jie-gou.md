@@ -182,11 +182,15 @@ int main(int argc, char const *argv[])
 
 {% tabs %}
 {% tab title="C" %}
+```text
 
+```
 {% endtab %}
 
 {% tab title="C++" %}
+```text
 
+```
 {% endtab %}
 {% endtabs %}
 
