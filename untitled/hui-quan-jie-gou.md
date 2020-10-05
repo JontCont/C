@@ -241,7 +241,7 @@ int main(int argc, char const *argv[])
 {% endtab %}
 {% endtabs %}
 
-#### 3. 一個字元一個字元輸入，Enter鍵才停止，印共輸入幾個字元。
+#### 3. 一個字元一個字元輸入，Enter鍵才停止，印共輸入幾個字元。\(C++為例\)
 
 ```c
 int main(int argc, char const *argv[])
