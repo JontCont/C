@@ -2,7 +2,7 @@
 description: 此為只能在迴圈使用，switch 可以單獨使用break
 ---
 
-# Break、Continue、goto敘述
+# Break、Continue敘述
 
 一般情況是會在違反進入迴圈的限制條件時候，才會結束迴圈運作，若問題是重複執行特定某些的敘述特性外，包刮例外特性必須加上break 或是continue 之敘述，可以方便撰寫程式。
 
@@ -65,41 +65,4 @@ continue 中文為\(繼續\)。是不執行迴圈內部某些敘述。
 
 {% endtab %}
 {% endtabs %}
-
-## GoTo
-
-以C來作範例
-
-```c
-#include <stdio.h>
-#include <stdlib.h>
-
-int main(){
-
-    int a[2],t;
-    for(int i=0;i<2;i++)
-        scanf("%d",&a[i]);
-    t= a[0]>a[1];
-
-    if(t==1)
-        goto true;
-    printf("a[0] is lower than a[1]");
-    goto done;
-
-    true:
-        printf("a[0] is higher than a[1]");
-    done:
-        goto_ex02();
-}
-
-void goto_ex02(){
-    printf("the begin\n");
-	goto end;
-	printf("hello world\n");
-
-end:
-	printf("the end\n");
-}
-
-```
 
