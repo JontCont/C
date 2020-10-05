@@ -6,23 +6,19 @@ description: 條件通常由關係運算式、邏輯運算式、算術運算式�
 
 迴圈結構描述事件重複現象。迴圈結構有三種：
 
-### 1.FOR - 計數迴圈 / 前測式條件迴圈
+### 1.計數迴圈 / 前測式條件迴圈
 
-{% hint style="info" %}
-🧙‍♂️ 使用方式:  
-
-for\( **初始值; 範圍 ; 動作**\){
-
-          陳述列 1;
-
-}
-{% endhint %}
+for
 
 當執行迴圈結構開端時，會檢查判斷是否是對的，就會去做執行。
 
 ![&#x524D;&#x6E2C;&#x5F0F;&#x689D;&#x4EF6;&#x8FF4;&#x5708;](../.gitbook/assets/image%20%2833%29.png)
 
 如何記住使用方式，for 迴圈內，因為有計數之稱，所以會有**初始值、範圍、動作**，這就是寫入for迴圈最簡單的記憶方式。
+
+{% hint style="info" %}
+🧙‍♂️ Tips :  for\( **初始值; 範圍 ; 動作**\){}
+{% endhint %}
 
  1. 寫出1~5相加的結果
 
@@ -117,95 +113,19 @@ int main(int argc, char const *argv[])
 {% endtab %}
 {% endtabs %}
 
-#### 3. 99乘法表
-
-{% tabs %}
-{% tab title="C" %}
-```c
-int main(void)
-{
-		int i , j,k;
-	for(i = 0; i< 9;i+=5,printf("---------------------------------------\n"))
-	{
-		for(j = 0; j <= 9;j++,printf("\n"))
-		{
-			for(k=i;k < i+5;k++){  printf("%2d x %1d = %2d ",k,j,k*j);}
-		}
-	}
-}
-```
-{% endtab %}
-{% endtabs %}
-
 ### 2.前測式條件迴圈
 
 for/while 兩種前測式條件迴圈
 
-1.利用while迴圈做出，輸入任意數字，直到0以後才停止，限制1~3。
+1.利用while迴圈做出，輸入多個數字，當按下Enter鍵才停止，印出多少數字的功能。
 
 {% tabs %}
 {% tab title="C" %}
-```c
-void main()
-{
-    int glass=50; //Glass ball
-    int take_ball; 
-    int who =1;
 
-    printf("Each person can only take 1-3 glass balls...\n");
-
-    while(1)
-    {
-        if(scanf("%d",&take_ball)!=1)
-        {
-            printf("Wrong input format, please try again...\n");
-            fflush(stdin);
-        }
-        else
-        {
-            if(take_ball>=1 && take_ball<=3)
-            {
-                glass-=take_ball;
-                printf("%d glass balls left\n",glass);
-                who++;
-                if(who==3) who=1;
-                if(glass<=0 || glass==1) {printf("loser : %d \n",who);break;} 
-            }
-            else{printf("Wrong input format, please try again...\n");}
-        }
-    }
-    
-}
-```
 {% endtab %}
 
 {% tab title="C++" %}
-```cpp
-int main(int argc, char const *argv[])
-{
-    int state = 50;
-    int get_num = 0;
 
-    cout << "桌上有50顆球 請輸入拿取數量，";
-    cout << "範圍1-3\n";
-    while (state >= 0)
-    {
-        cin >> get_num;
-        if (get_num > 3 || get_num < 0)
-        {
-            cout << "請再輸入一次 範圍1-3\n";
-        }
-        else
-        {
-            state -= get_num;
-        }
-        cout << "剩下 " << state << "\n";
-    }
-
-    return 0;
-}
-
-```
 {% endtab %}
 {% endtabs %}
 
@@ -213,31 +133,11 @@ int main(int argc, char const *argv[])
 
 {% tabs %}
 {% tab title="C" %}
-```text
 
-```
 {% endtab %}
 
 {% tab title="C++" %}
-```cpp
-int main(int argc, char const *argv[])
-{
-    int spilt_sum;
-    int num, spilt;
-    cout << "任意輸入一數字\n";
-    cin >> num;
-    while (num % 10 != 0)
-    {
-        spilt = num % 10;
-        cout << spilt;
-        num /= 10;
-    }
-    cout << '\n';
-    system("pause");
-    return 0;
-}
 
-```
 {% endtab %}
 {% endtabs %}
 
