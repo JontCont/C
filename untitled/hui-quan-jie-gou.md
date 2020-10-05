@@ -117,11 +117,31 @@ int main(int argc, char const *argv[])
 {% endtab %}
 {% endtabs %}
 
+#### 3. 99乘法表
+
+{% tabs %}
+{% tab title="C" %}
+```c
+int main(void)
+{
+		int i , j,k;
+	for(i = 0; i< 9;i+=5,printf("---------------------------------------\n"))
+	{
+		for(j = 0; j <= 9;j++,printf("\n"))
+		{
+			for(k=i;k < i+5;k++){  printf("%2d x %1d = %2d ",k,j,k*j);}
+		}
+	}
+}
+```
+{% endtab %}
+{% endtabs %}
+
 ### 2.前測式條件迴圈
 
 for/while 兩種前測式條件迴圈
 
-1.利用while迴圈做出，輸入多個數字，當按下Enter鍵才停止，印出多少數字的功能。
+1.利用while迴圈做出，輸入任意數字，直到0以後才停止，限制1~3。
 
 {% tabs %}
 {% tab title="C" %}
@@ -129,7 +149,32 @@ for/while 兩種前測式條件迴圈
 {% endtab %}
 
 {% tab title="C++" %}
+```cpp
+int main(int argc, char const *argv[])
+{
+    int state = 50;
+    int get_num = 0;
 
+    cout << "桌上有50顆球 請輸入拿取數量，";
+    cout << "範圍1-3\n";
+    while (state >= 0)
+    {
+        cin >> get_num;
+        if (get_num > 3 || get_num < 0)
+        {
+            cout << "請再輸入一次 範圍1-3\n";
+        }
+        else
+        {
+            state -= get_num;
+        }
+        cout << "剩下 " << state << "\n";
+    }
+
+    return 0;
+}
+
+```
 {% endtab %}
 {% endtabs %}
 
