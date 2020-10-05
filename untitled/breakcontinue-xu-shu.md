@@ -2,7 +2,7 @@
 description: 此為只能在迴圈使用，switch 可以單獨使用break
 ---
 
-# Break、Continue敘述
+# Break、Continue、goto敘述
 
 一般情況是會在違反進入迴圈的限制條件時候，才會結束迴圈運作，若問題是重複執行特定某些的敘述特性外，包刮例外特性必須加上break 或是continue 之敘述，可以方便撰寫程式。
 

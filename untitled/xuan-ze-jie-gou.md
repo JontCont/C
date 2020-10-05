@@ -122,34 +122,6 @@ int main()
 {% endtab %}
 {% endtabs %}
 
-#### 3.登入帳號
-
-{% tabs %}
-{% tab title="C" %}
-```c
-int main()
-{
-    char username[250]=" ";
-    char password[250]=" ";
-    const char *user="student";
-    const char *pwd="1234";
-    printf("enter username & password >> \n");
-    scanf("%s %s",&username,&password);
-    if(strcmp(username,user)==0 && strcmp(password,pwd)==0)
-    {
-        printf("welcome !!");
-    }
-    else printf("error!!");
-
-}
-```
-{% endtab %}
-
-{% tab title="C++" %}
-
-{% endtab %}
-{% endtabs %}
-
 ### **2. 雙重選擇**
 
 **若事件有兩種狀況，例如：if ... else**

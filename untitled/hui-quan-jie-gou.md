@@ -145,7 +145,38 @@ for/while 兩種前測式條件迴圈
 
 {% tabs %}
 {% tab title="C" %}
+```c
+void main()
+{
+    int glass=50; //Glass ball
+    int take_ball; 
+    int who =1;
 
+    printf("Each person can only take 1-3 glass balls...\n");
+
+    while(1)
+    {
+        if(scanf("%d",&take_ball)!=1)
+        {
+            printf("Wrong input format, please try again...\n");
+            fflush(stdin);
+        }
+        else
+        {
+            if(take_ball>=1 && take_ball<=3)
+            {
+                glass-=take_ball;
+                printf("%d glass balls left\n",glass);
+                who++;
+                if(who==3) who=1;
+                if(glass<=0 || glass==1) {printf("loser : %d \n",who);break;} 
+            }
+            else{printf("Wrong input format, please try again...\n");}
+        }
+    }
+    
+}
+```
 {% endtab %}
 
 {% tab title="C++" %}
@@ -188,7 +219,23 @@ int main(int argc, char const *argv[])
 {% endtab %}
 
 {% tab title="C++" %}
-```text
+```cpp
+int main(int argc, char const *argv[])
+{
+    int spilt_sum;
+    int num, spilt;
+    cout << "任意輸入一數字\n";
+    cin >> num;
+    while (num % 10 != 0)
+    {
+        spilt = num % 10;
+        cout << spilt;
+        num /= 10;
+    }
+    cout << '\n';
+    system("pause");
+    return 0;
+}
 
 ```
 {% endtab %}
