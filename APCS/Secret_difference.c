@@ -1,18 +1,18 @@
-/*
-���D�y�z
-    �N�@�ӤQ�i�쥿��ƪ��_�Ʀ�ƪ��M�٬�
-    A �A���Ʀ�ƪ��M�٬� B �A�h A �P B ����
-    ��t�� |A B| �٬��o�ӥ���ƪ����K�t�C
-    �Ҧp�G
-    263541 ���_�Ʀ�ƪ��M A = 6+5+1 = 12 �A���Ʀ�ƪ��M B = 2+3+4 = 9 �A�ҥH
-    263541 �����K�t�O |12 9|= 3 �C
-    ���w�@�ӤQ�i�쥿��� X �A�Ч�X X �� ���K�t �C
-    
-    ��J�榡
-        ��J���@��t ���@ �ӤQ�i����ܪk�� ����� X �A����O�@�Ӵ���r�� �C
-    ��X�榡
-        �п�X X �� ���K�t Y �H�Q�i����ܪk��X ))�A�H����r������ �C
 
+/*
+問題描述
+    將一個十進位正整數的奇數位數的和稱為
+    A ，偶數位數的和稱為 B ，則 A 與 B 的絕
+    對差值 |A B| 稱為這個正整數的秘密差。
+    例如：
+    263541 的奇數位數的和 A = 6+5+1 = 12 ，偶數位數的和 B = 2+3+4 = 9 ，所以
+    263541 的秘密差是 |12 9|= 3 。
+    給定一個十進位正整數 X ，請找出 X 的 秘密差 。
+    
+    輸入格式
+        輸入為一行含 有一 個十進位表示法的 正整數 X ，之後是一個換行字元 。
+    輸出格式
+        請輸出 X 的 秘密差 Y 以十進位表示法輸出 ))，以換行字元結尾 。
 */
 
 #include <stdio.h>
@@ -21,7 +21,7 @@
 int main ()
 {
     char num[1001];
-    printf("���K�t output >>> \n");
+    printf("���K�t output >>> \n");
     scanf("%s",&num);
     int A=0,B=0;
     int strsum= strlen(num);

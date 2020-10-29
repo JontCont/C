@@ -1,18 +1,19 @@
+
 /*
-²Ä4ÃD ¦å½tÃö«Y
-   °ÝÃD´y­z
-      ¤p¦t¦³¤@­Ó¤j®a±Ú¡C¦³¤@¤Ñ¡A¥Lµo²{°O¿ý¾ã­Ó®a±Ú¦¨­û©M¦¨­û¶¡¦å½tÃö«Yªº®a±Ú±Ú
-      ÃÐ¡C ¤p¦t ¹ï©ó³Ì»·ªº¦å½tÃö«Y (§Ú­ÌºÙ¤§¬° "¦å½t¶ZÂ÷ ") ¦³¦h»··P¨ì«Ü¦n©_¡C
-      0¬O 7ªº «Ä¤l 1¡B 2©M 3¬O 0ªº «Ä¤l 4©M 5¬O 1ªº «Ä¤l 6¬O 3ªº «Ä¤l ¡C
-      §Ú­Ì¥i¥H»´©öªºµo²{³Ì»·ªº¿Ë±­Ãö«Y¬°4(©Î 5)©M 6¡A¥L­Ìªº "¦å½t¶ZÂ÷ "¬O 4 (4~1 1~00~3 3~6)¡C
-      µ¹¤©¥ô¤@®a±ÚªºÃö«Y¹Ï¡A½Ð §ä¥X³Ì»·ªº"¦å½t¶ZÂ÷ "¡C§A¥i¥H°²³]¥u¦³¤@­Ó¤H¬O¾ã­Ó®a±Ú
-      ¦¨­ûªº¯ª¥ý¡A¦Ó¥B¨S¦³¨â­Ó¦¨­û¦³¦P¼Ëªº¤p«Ä¡C
-   ¿é¤J®æ¦¡
-      ²Ä¤@¦æ¬°¤@­Ó¥¿¾ã¼Æn ¥Nªí ¦¨­ûªº­Ó¼Æ¡A ¨C¤H¥H 0~n-1¤§¶¡±©¤@ªº½s¸¹¥Nªí¡C ±µµÛ
-      ªº n-1¦æ ¨C¦æ¦³¨â­Ó¥H¤@­ÓªÅ¥Õ¹j¶}ªº¾ã¼Æ a»P b (0 ? a,b ? n- ¥Nªí b¬O aªº
-      «Ä¤l ¡C
-   ¿é¥X®æ¦¡
-      ¨Cµ§´ú¸ê¿é¥X¤@¦æ³Ì»·"¦å½t¶ZÂ÷ "ªºµª®×¡C
+ç¬¬4é¡Œ è¡€ç·£é—œä¿‚
+   å•é¡Œæè¿°
+      å°å®‡æœ‰ä¸€å€‹å¤§å®¶æ—ã€‚æœ‰ä¸€å¤©ï¼Œä»–ç™¼ç¾è¨˜éŒ„æ•´å€‹å®¶æ—æˆå“¡å’Œæˆå“¡é–“è¡€ç·£é—œä¿‚çš„å®¶æ—æ—
+      è­œã€‚ å°å®‡ å°æ–¼æœ€é çš„è¡€ç·£é—œä¿‚ (æˆ‘å€‘ç¨±ä¹‹ç‚º "è¡€ç·£è·é›¢ ") æœ‰å¤šé æ„Ÿåˆ°å¾ˆå¥½å¥‡ã€‚
+      0æ˜¯ 7çš„ å­©å­ 1ã€ 2å’Œ 3æ˜¯ 0çš„ å­©å­ 4å’Œ 5æ˜¯ 1çš„ å­©å­ 6æ˜¯ 3çš„ å­©å­ ã€‚
+      æˆ‘å€‘å¯ä»¥è¼•æ˜“çš„ç™¼ç¾æœ€é çš„è¦ªæˆšé—œä¿‚ç‚º4(æˆ– 5)å’Œ 6ï¼Œä»–å€‘çš„ "è¡€ç·£è·é›¢ "æ˜¯ 4 (4~1 1~00~3 3~6)ã€‚
+      çµ¦äºˆä»»ä¸€å®¶æ—çš„é—œä¿‚åœ–ï¼Œè«‹ æ‰¾å‡ºæœ€é çš„"è¡€ç·£è·é›¢ "ã€‚ä½ å¯ä»¥å‡è¨­åªæœ‰ä¸€å€‹äººæ˜¯æ•´å€‹å®¶æ—
+      æˆå“¡çš„ç¥–å…ˆï¼Œè€Œä¸”æ²’æœ‰å…©å€‹æˆå“¡æœ‰åŒæ¨£çš„å°å­©ã€‚
+   è¼¸å…¥æ ¼å¼
+      ç¬¬ä¸€è¡Œç‚ºä¸€å€‹æ­£æ•´æ•¸n ä»£è¡¨ æˆå“¡çš„å€‹æ•¸ï¼Œ æ¯äººä»¥ 0~n-1ä¹‹é–“æƒŸä¸€çš„ç·¨è™Ÿä»£è¡¨ã€‚ æŽ¥è‘—
+      çš„ n-1è¡Œ æ¯è¡Œæœ‰å…©å€‹ä»¥ä¸€å€‹ç©ºç™½éš”é–‹çš„æ•´æ•¸ aèˆ‡ b (0 ? a,b ? n- ä»£è¡¨ bæ˜¯ açš„
+      å­©å­ ã€‚
+   è¼¸å‡ºæ ¼å¼
+      æ¯ç­†æ¸¬è³‡è¼¸å‡ºä¸€è¡Œæœ€é "è¡€ç·£è·é›¢ "çš„ç­”æ¡ˆã€‚
 */
 
 #include <stdio.h>
@@ -20,15 +21,15 @@
 
 #define MAX 10000
 
-int tree[MAX][2]={{0}}; //¦å½tÃö«Y¾ð
-int maxD = 0;//³Ì»·Ãö«Y
+int tree[MAX][2]={{0}}; //ï¿½ï¿½tï¿½ï¿½ï¿½Yï¿½ï¿½
+int maxD = 0;//ï¿½Ì»ï¿½ï¿½ï¿½ï¿½Y
 int n;//scanf
-int Child_NO[MAX] = {0};//§PÂ_¤÷¥À
-int isChild[MAX] = {0};//°O¿ý«Ä¤l
+int Child_NO[MAX] = {0};//ï¿½Pï¿½_ï¿½ï¿½ï¿½ï¿½
+int isChild[MAX] = {0};//ï¿½Oï¿½ï¿½ï¿½Ä¤l
 
 
 int DFS(int x) {
-   if (Child_NO[x] == 0) return 0;//¨S¦³¤p«Ä¡A»¼°j¤¤¤î
+   if (Child_NO[x] == 0) return 0;//ï¿½Sï¿½ï¿½ï¿½pï¿½Ä¡Aï¿½ï¿½ï¿½jï¿½ï¿½ï¿½ï¿½
 
    else if (Child_NO[x] == 1)
    {
@@ -36,13 +37,13 @@ int DFS(int x) {
          {
             if(tree[j][0]==x)
             {
-            return DFS(tree[j][1])+1;//¦^¶Ç²`«×+1
+            return DFS(tree[j][1])+1;//ï¿½^ï¿½Ç²`ï¿½ï¿½+1
             }
          }
 
     }
    else 
-   {//¤p«Ä¶W¹L¨â­Ó¥H¤W
+   {//ï¿½pï¿½Ä¶Wï¿½Lï¿½ï¿½Ó¥Hï¿½W
       int max1=0 , max2 = 0 ;
       for(int j=0 ; j<n-1 ; j++) 
       {
@@ -73,11 +74,11 @@ int main() {
     }
     int root;
 
-    //§ä¥Xroot
+    //ï¿½ï¿½Xroot
     for (int i = 0; i < n; i++) 
     {
         if (isChild[i]==0) 
-        {//¥u­n¤£¬O¤p«Ä¡A´N¬Oroot
+        {//ï¿½uï¿½nï¿½ï¿½ï¿½Oï¿½pï¿½Ä¡Aï¿½Nï¿½Oroot
             root = i;
             break;
         }
