@@ -48,8 +48,10 @@ scanf("%d",&n);
 
 int main(void)
 {
-  loop_math();
-  loop_star();
- system("pause");
+	printf("1. printf math \n");
+	loop_math();
+	printf("1. printf star (*) \n");
+	loop_star();
+	system("pause");
  return 0;
 }
