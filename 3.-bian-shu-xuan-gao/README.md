@@ -6,7 +6,7 @@ printf\(\) 顧名思義是指 "打印的格式化"，print-format 。
 
 一開始使用，已經知道 printf 的作用 =&gt; printf\("你要輸入的內容"\);
 
-#### 那如何配合 變數型式顯示?
+## 那如何配合 變數型式顯示?
 
 名稱稱為 "輸出格式化"
 
@@ -19,19 +19,23 @@ printf\(\) 顧名思義是指 "打印的格式化"，print-format 。
 * `%s`：字串 \(即字元陣列\)
 * `%p`：指標位址
 
-參考 =&gt; [https://docs.microsoft.com/zh-tw/cpp/c-runtime-library/format-specification-syntax-printf-and-wprintf-functions?view=vs-2019](https://docs.microsoft.com/zh-tw/cpp/c-runtime-library/format-specification-syntax-printf-and-wprintf-functions?view=vs-2019)
+### 參考 
 
-#### 結論
+{% embed url="https://docs.microsoft.com/zh-tw/cpp/c-runtime-library/format-specification-syntax-printf-and-wprintf-functions?view=vs-2019" %}
 
-所以我們可以這樣解釋
+## 結論
+
+**int out content =已經是字串不能再更改 ，%d 告訴這個擷取逗號後的 i 值到 %d 內。  
+所以會變成 =&gt; int out content 5**。
 
 `int i =5;    
 printf(" int out content %d", i );`
 
-**int out content =已經是字串不能再更改 ，%d 告訴這個擷取逗號後的 i 值到 %d 內。  
-所以會變成 =&gt; int out content 5**
+\*\*\*\*
 
-### 題外話 下方為 stdio.h 的函數
+## 補充
+
+下方為 stdio.h 的函數
 
 ```text
     _Check_return_opt_
