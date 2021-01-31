@@ -263,23 +263,26 @@ do...while
 
 {% tabs %}
 {% tab title="C" %}
-```text
-            string sOption ="";
-            do{
-                printf("==模擬販賣機作業流程==\n");
-                printf("1. 紅茶\n2. 奶茶\n");
-                printf("3. 綠茶\nQ. 離開\n");
-                sOption = Console.ReadLine();
-                printf("請投入金額 >>");
-                int cost  = Convert.ToInt32(Console.ReadLine());
-                switch(sOption)
-                {
-                    case "1":cost -= 10;break;
-                    case "2":cost -= 20;break;
-                    case "3":cost -= 14;break;
-                }
-                printf("顯示金額 >> %d \n",cost);
-            }while(sOption != "Q");
+```c
+int main(int argc, char const *argv[])
+{
+   string sOption ="";
+    do{
+        printf("==模擬販賣機作業流程==\n");
+        printf("1. 紅茶\n2. 奶茶\n");
+        printf("3. 綠茶\nQ. 離開\n");
+        sOption = Console.ReadLine();
+        printf("請投入金額 >>");
+        int cost  = Convert.ToInt32(Console.ReadLine());
+        switch(sOption)
+        {
+            case "1":cost -= 10;break;
+            case "2":cost -= 20;break;
+            case "3":cost -= 14;break;
+        }
+        printf("顯示金額 >> %d \n",cost);
+    }while(sOption != "Q");
+}
 ```
 {% endtab %}
 
