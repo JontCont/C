@@ -2,9 +2,9 @@
 
 ## 變數範圍和生命周期
 
-1. local **區域**變數 : local 變數僅活在該函式內，存放位置在 stack 或 heap 記憶體中。
-2. static 靜態變數 : static 變數生命周期 \(life time\) 跟程式一樣長，而範圍 \(scope\) 則維持不變，即在宣告的函式之外仍無法存取 static 變數。
-3. global 全域變數 : 所有區段皆可使用此變數。
+1. **local 區域變數** : local 變數僅活在該函式內，存放位置在 stack 或 heap 記憶體中。
+2. **static 靜態變數** : static 變數生命周期 \(life time\) 跟程式一樣長，而範圍 \(scope\) 則維持不變，即在宣告的函式之外仍無法存取 static 變數。
+3. **global 全域變數** : 所有區段皆可使用此變數。
 
 {% hint style="info" %}
 ###   **static vs global**
