@@ -233,6 +233,7 @@ int main(int argc, char const *argv[])
 {% tabs %}
 {% tab title="C++" %}
 ```cpp
+#include <iostream>
 int main(int argc, char const *argv[])
 {
     int spilt_sum;
