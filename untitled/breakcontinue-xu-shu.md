@@ -80,11 +80,43 @@ continue 中文為\(繼續\)。是不執行迴圈內部某些敘述。
 2. 在while 迴圈內部使用 continue 執行到 continue 會跳到該層的while內，檢查迴圈是否成立。
 3. 在do...while 迴圈內部使用continue 執行到continue 會跳到do 層的地方。
 
-#### 1.計算出1-100之間有偶數和
+1. \(遊戲\)兩個人輪流從50顆彈珠中，拿走1~3顆，拿走最後一顆玻璃彈珠的人為輸家。
 
 {% tabs %}
 {% tab title="C" %}
+```c
+#include <stdio.h>
 
+int main(int argc, char const *argv[])
+{
+    int who = 1;
+    int take_num = 0;
+    int box = 50;
+    while (1)
+    {
+        printf("play %d start get box >>", who);
+        scanf("%d", &take_num);
+        if (take_num > 3 || take_num < 0)
+        {
+            printf("box not get 3 up and not get 0 \n");
+            continue;
+        }
+        box -=take_num;
+        if(box == 0){
+            printf("lose => play %d \n" , who);
+            break;
+        }
+
+        if (who >= 2)
+            who = 1;
+        else
+            ++who;
+        printf("box %d  \n" , box);
+    }
+    return 0;
+}
+
+```
 {% endtab %}
 
 {% tab title="C++" %}
@@ -92,25 +124,9 @@ continue 中文為\(繼續\)。是不執行迴圈內部某些敘述。
 {% endtab %}
 {% endtabs %}
 
-2. \(遊戲\)兩個人輪流從50顆彈珠中，拿走1~3顆，拿走最後一顆玻璃彈珠的人為輸家。
+2. 用文字 I LOVE C/C++ language ，呈現跑馬燈的效果直到任意案鍵就結束。
 
 {% tabs %}
-{% tab title="C" %}
-
-{% endtab %}
-
-{% tab title="C++" %}
-
-{% endtab %}
-{% endtabs %}
-
-3. 用文字 I LOVE C/C++ language ，呈現跑馬燈的效果直到任意案鍵就結束。
-
-{% tabs %}
-{% tab title="C" %}
-
-{% endtab %}
-
 {% tab title="C++" %}
 
 {% endtab %}
