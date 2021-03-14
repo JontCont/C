@@ -135,6 +135,25 @@ int main(void)
 }
 ```
 {% endtab %}
+
+{% tab title="C++" %}
+```cpp
+#include <iostream>
+using namespace std;
+
+int main(int argc, char const *argv[])
+{
+    for(int i = 1 ; i< 10 ; i++)
+    {
+        for(int j = 1 ; j < 10 ; j++)
+        {cout<< i <<"*" << j <<"=" << i*j << "\t";}    
+        cout<<"\n";
+    }
+    return 0;
+}
+
+```
+{% endtab %}
 {% endtabs %}
 
 ### 2.前測式條件迴圈
