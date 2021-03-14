@@ -276,7 +276,7 @@ int main(){
 {% endtab %}
 {% endtabs %}
 
-#### 3. 一個字元一個字元輸入，Enter鍵才停止，印共輸入幾個字元。\(C++為例\)
+#### 3. 一個字元一個字元輸入，Enter鍵才停止，印共輸入幾個字元。
 
 {% tabs %}
 {% tab title="C" %}
@@ -315,6 +315,18 @@ int main(int argc, char const *argv[])
 ```
 {% endtab %}
 {% endtabs %}
+
+getchar\(\)函數是C語言專門為輸入單個字符而提供的，getchar\(\)函數是從I/O字符流中讀取一個字符，必須輸入換行才能讀入字符。
+
+getche\(\)、getch\(\)函數也是讀入單個字符，是從控制台直接讀取一個字符，無須換行即可讀入字符。
+
+{% hint style="info" %}
+### 備註 getche\(\)、getch\(\)
+
+ getche\(\)和getch\(\)需要的頭文件是&lt;conio.h&gt;。conio.h不是C標準庫中的頭文件。conio是ConsoleInput/Output（控制台輸入輸出）的簡寫，其中定義了通過控制台進行數據輸入和數據輸出的函數，主要是一些用戶通過按鍵盤產生的對應操作。
+{% endhint %}
+
+
 
 ### 3.後測式條件迴圈
 
