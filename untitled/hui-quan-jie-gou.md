@@ -257,6 +257,12 @@ int main(int argc, char const *argv[])
 
 #### 3. 一個字元一個字元輸入，Enter鍵才停止，印共輸入幾個字元。\(C++為例\)
 
+{% tabs %}
+{% tab title="C" %}
+
+{% endtab %}
+
+{% tab title="C++" %}
 ```c
 int main(int argc, char const *argv[])
 {
@@ -272,6 +278,8 @@ int main(int argc, char const *argv[])
     return 0;
 }
 ```
+{% endtab %}
+{% endtabs %}
 
 ### 3.後測式條件迴圈
 
