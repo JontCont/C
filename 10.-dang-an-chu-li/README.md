@@ -71,3 +71,9 @@ else
 }
 ```
 
+### stdio.h 標頭檔中的檔案處理函數
+
+![](../.gitbook/assets/image%20%2845%29.png)
+
+![](../.gitbook/assets/image%20%2846%29.png)
+
