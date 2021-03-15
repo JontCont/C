@@ -57,6 +57,5 @@
     * [定義結構](9.-zi-ding-zi-liao-xing-tai/jie-gou/ding-yi-jie-gou.md)
     * [巢狀結構](9.-zi-ding-zi-liao-xing-tai/jie-gou/chao-zhuang-jie-gou.md)
 * [10. 檔案處理](10.-dang-an-chu-li/README.md)
-  * [檔案類型](10.-dang-an-chu-li/dang-an-lei-xing.md)
   * [檔案存取](10.-dang-an-chu-li/dang-an-cun-qu.md)
 

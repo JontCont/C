@@ -135,6 +135,25 @@ int main(void)
 }
 ```
 {% endtab %}
+
+{% tab title="C++" %}
+```cpp
+#include <iostream>
+using namespace std;
+
+int main(int argc, char const *argv[])
+{
+    for(int i = 1 ; i< 10 ; i++)
+    {
+        for(int j = 1 ; j < 10 ; j++)
+        {cout<< i <<"*" << j <<"=" << i*j << "\t";}    
+        cout<<"\n";
+    }
+    return 0;
+}
+
+```
+{% endtab %}
 {% endtabs %}
 
 ### 2.前測式條件迴圈
@@ -214,6 +233,7 @@ int main(int argc, char const *argv[])
 {% tabs %}
 {% tab title="C++" %}
 ```cpp
+#include <iostream>
 int main(int argc, char const *argv[])
 {
     int spilt_sum;
@@ -233,10 +253,51 @@ int main(int argc, char const *argv[])
 
 ```
 {% endtab %}
+
+{% tab title="C" %}
+```c
+#include<stdio.h>
+
+int main(){
+    int change = 1234; 
+    int befor_num[4]; 
+    int multiple = 1000;
+    for(int i = 0 ; i < 4 ;i++){
+        befor_num[i] = change%10;
+        change /=10;
+    }
+    for(int i = 0 ; i < 4 ;i++){
+        change += befor_num[i] *multiple;
+        multiple /=10;
+    }
+    printf("befor  >> %d", change);
+}
+```
+{% endtab %}
 {% endtabs %}
 
-#### 3. 一個字元一個字元輸入，Enter鍵才停止，印共輸入幾個字元。\(C++為例\)
+#### 3. 一個字元一個字元輸入，Enter鍵才停止，印共輸入幾個字元。
 
+{% tabs %}
+{% tab title="C" %}
+```c
+#include <stdio.h>
+#include <conio.h>
+int main(int argc, char const *argv[])
+{
+    int num = 0;
+    while (getche() != '\r')
+    {
+        ++num;
+    }
+    printf(" 次數>> %d", num);
+    return 0;
+}
+
+```
+{% endtab %}
+
+{% tab title="C++" %}
 ```c
 int main(int argc, char const *argv[])
 {
@@ -252,6 +313,20 @@ int main(int argc, char const *argv[])
     return 0;
 }
 ```
+{% endtab %}
+{% endtabs %}
+
+getchar\(\)函數是C語言專門為輸入單個字符而提供的，getchar\(\)函數是從I/O字符流中讀取一個字符，必須輸入換行才能讀入字符。
+
+getche\(\)、getch\(\)函數也是讀入單個字符，是從控制台直接讀取一個字符，無須換行即可讀入字符。
+
+{% hint style="info" %}
+### 備註 getche\(\)、getch\(\)
+
+ getche\(\)和getch\(\)需要的頭文件是&lt;conio.h&gt;。conio.h不是C標準庫中的頭文件。conio是ConsoleInput/Output（控制台輸入輸出）的簡寫，其中定義了通過控制台進行數據輸入和數據輸出的函數，主要是一些用戶通過按鍵盤產生的對應操作。
+{% endhint %}
+
+
 
 ### 3.後測式條件迴圈
 
@@ -287,7 +362,31 @@ int main(int argc, char const *argv[])
 {% endtab %}
 
 {% tab title="C++" %}
-```text
+```cpp
+#include <iostream>
+using namespace std;
+
+int main(int argc, char const *argv[])
+{
+    int cont = 0 ; 
+    int ioption =  0; //option 
+    int  oneTea = 30; int  twoTea = 25;
+    do{
+        cout << "請輸入哪種飲料";
+        cout << "\n 1.奶茶\t2.紅茶 >>";
+        cin >> ioption ;
+        cout << "請輸入金額";
+        cin >> cont;
+        if(cont< oneTea || cont < twoTea){cout <<"\n輸入金額過少，請再重新輸入一次";continue;}
+        if(ioption  == 1)
+            cout<<"\n退還金額為 : " << cont  -oneTea  <<"\n";
+        else if (ioption ==2) 
+            cout << "\n退還金額為 : " << cont  -twoTea  <<"\n";
+        else cout << "\n無此商品" ; 
+        
+    }while(ioption != 0 );
+    return 0;
+}
 
 ```
 {% endtab %}
@@ -297,7 +396,26 @@ int main(int argc, char const *argv[])
 
 {% tabs %}
 {% tab title="C" %}
+```c
+#include <stdio.h>
+int main(void)
+{
+    int option = 0;
+    printf("===============================\n");
+    printf("=---99 multiplication table---=\n");
+    printf("===============================\n");
+    do
+    {
+         printf( "請輸入以下選項\n");
+         printf("1. C/C++   2.C#\n"); 
+         printf("3. JAVA    4.Python\n"); 
+         printf("0. exit \n >>"); 
+         printf(option);
 
+    } while (option != 0);
+    return 0;
+}
+```
 {% endtab %}
 
 {% tab title="C++" %}
