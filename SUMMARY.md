@@ -13,8 +13,7 @@
   * [2-5 資料運算](2.-zi-liao-xing-tai-xuan-gao/25-zi-liao-yun-suan/README.md)
     * [位元運算](2.-zi-liao-xing-tai-xuan-gao/25-zi-liao-yun-suan/wei-yuan-yun-suan.md)
 * [3. 變數宣告](3.-bian-shu-xuan-gao/README.md)
-  * [3-1 輸入函式](3.-bian-shu-xuan-gao/31-shu-ru-han-shi.md)
-  * [3-2 輸出函式](3.-bian-shu-xuan-gao/32-shu-chu-han-shi.md)
+  * [輸入/輸出函式](3.-bian-shu-xuan-gao/31-shu-ru-han-shi.md)
 * [4. 程式主要結構](untitled/README.md)
   * [選擇結構](untitled/xuan-ze-jie-gou.md)
   * [迴圈結構](untitled/hui-quan-jie-gou.md)
@@ -56,6 +55,5 @@
     * [宣告結構](9.-zi-ding-zi-liao-xing-tai/jie-gou/xuan-gao-jie-gou.md)
     * [定義結構](9.-zi-ding-zi-liao-xing-tai/jie-gou/ding-yi-jie-gou.md)
     * [巢狀結構](9.-zi-ding-zi-liao-xing-tai/jie-gou/chao-zhuang-jie-gou.md)
-* [10. 檔案處理](10.-dang-an-chu-li/README.md)
-  * [檔案存取](10.-dang-an-chu-li/dang-an-cun-qu.md)
+* [10. 檔案處理](10.-dang-an-chu-li.md)
 

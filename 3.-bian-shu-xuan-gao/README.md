@@ -23,7 +23,7 @@ printf\(\) 顧名思義是指 "打印的格式化"，print-format 。
 
 {% embed url="https://docs.microsoft.com/zh-tw/cpp/c-runtime-library/format-specification-syntax-printf-and-wprintf-functions?view=vs-2019" %}
 
-## 結論
+### 結論
 
 **int out content =已經是字串不能再更改 ，%d 告訴這個擷取逗號後的 i 值到 %d 內。  
 所以會變成 =&gt; int out content 5**。
@@ -33,7 +33,7 @@ printf(" int out content %d", i );`
 
 \*\*\*\*
 
-## 補充
+### 補充
 
 下方為 stdio.h 的函數
 
