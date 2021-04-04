@@ -153,5 +153,9 @@ void SelSort(int A[], int n)  //選擇排序法之副程式
 
 線性搜尋法 - Sequential Search
 
+```c
+
+```
+
 二分搜尋法 - Binary Search 
 
