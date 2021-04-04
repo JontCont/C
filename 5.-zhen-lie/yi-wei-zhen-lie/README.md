@@ -73,7 +73,7 @@ char id[9];
 
 設定初始設定語法有下列方法
 
-```text
+```c
 char arrayname[長度 +1] = "字串內容";
 char arrayname [長度+1] ={'字元1','字元2'...}
 ```
