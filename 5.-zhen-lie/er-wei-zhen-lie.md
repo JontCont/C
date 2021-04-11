@@ -64,3 +64,34 @@ void main (){
 {% endtab %}
 {% endtabs %}
 
+有一個3行4列的陣列，編寫一段程式，求出其中的最大值，以及最大值所在的行號和列號。
+
+```c
+#include <stdio.h>
+#include <stdlib.h>
+int main(void)
+{
+
+    int a[3][4] = {{1, 2, 3, 4}, {5, 6, 7, 8}, {9, 10, 11, 12}};
+    int i, j, c, d, max;
+    max = a[0][0];
+    //迴圈行數
+    for (i = 0; i <= 2; i++)
+    {
+        //迴圈列數
+        for (j = 0; j <= 3; j++)
+        {
+            if (max <= a[i][j])
+            {
+                max = a[i][j];
+                c = i;
+                d = j;
+            }
+        }
+    }
+    printf("最大數為：%d\n行號為：%d\n列號為：%d", max, c, d); //下標從0開始
+
+    return EXIT_SUCCESS;
+}
+```
+
