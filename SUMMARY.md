@@ -20,7 +20,6 @@
   * [Break、Continue、goto敘述](untitled/breakcontinue-xu-shu.md)
 * [5. 陣列](5.-zhen-lie/README.md)
   * [一維陣列](5.-zhen-lie/yi-wei-zhen-lie/README.md)
-    * [排序法](5.-zhen-lie/yi-wei-zhen-lie/pai-xu-fa.md)
     * [亂數種子 -  rand\(\)及srand\(\)](5.-zhen-lie/yi-wei-zhen-lie/luan-shu-zhong-zi-rand-ji-srand.md)
   * [二維陣列](5.-zhen-lie/er-wei-zhen-lie.md)
   * [三維陣列](5.-zhen-lie/san-wei-zhen-lie.md)
