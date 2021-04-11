@@ -38,10 +38,6 @@
 {% tab title="C" %}
 
 {% endtab %}
-
-{% tab title="C++" %}
-
-{% endtab %}
 {% endtabs %}
 
 
