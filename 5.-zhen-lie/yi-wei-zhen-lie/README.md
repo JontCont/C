@@ -200,7 +200,7 @@ void main (){
 
 ### 二分搜尋法 - Binary Search 
 
-是一種在[有序陣列](https://zh.wikipedia.org/wiki/%E6%9C%89%E5%BA%8F%E6%95%B0%E5%AF%B9)中搜尋某一特定元素的搜尋[演算法](https://zh.wikipedia.org/wiki/%E7%AE%97%E6%B3%95)。搜尋過程從陣列的中間元素開始，如果中間元素正好是要搜尋的元素，則搜尋過程結束；如果某一特定元素大於或者小於中間元素，則在陣列大於或小於中間元素的那一半中搜尋，而且跟開始一樣從中間元素開始比較。如果在某一步驟陣列為空，則代表找不到。這種搜尋演算法每一次比較都使搜尋範圍縮小一半。
+是一種在有序陣列中搜尋某一特定元素的搜尋演算法。搜尋過程從陣列的中間元素開始，如果中間元素正好是要搜尋的元素，則搜尋過程結束；如果某一特定元素大於或者小於中間元素，則在陣列大於或小於中間元素的那一半中搜尋，而且跟開始一樣從中間元素開始比較。如果在某一步驟陣列為空，則代表找不到。這種搜尋演算法每一次比較都使搜尋範圍縮小一半。
 
 二分搜尋演算法在[最壞情況](https://zh.wikipedia.org/w/index.php?title=%E6%9C%80%E5%9D%8F%E6%83%85%E5%86%B5&action=edit&redlink=1)下是[對數時間複雜度](https://zh.wikipedia.org/wiki/%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6#%E5%AF%B9%E6%95%B0%E6%97%B6%E9%97%B4)的，需要進行{O\(\log n\)}![O\(\log n\)](https://wikimedia.org/api/rest_v1/media/math/render/svg/aae0f22048ba6b7c05dbae17b056bfa16e21807d)次比較操作![n](https://wikimedia.org/api/rest_v1/media/math/render/svg/a601995d55609f2d9f5e233e36fbe9ea26011b3b)在此處是陣列的元素數量，![O](https://wikimedia.org/api/rest_v1/media/math/render/svg/9d70e1d0d87e2ef1092ea1ffe2923d9933ff18fc)是[大O記號](https://zh.wikipedia.org/wiki/%E5%A4%A7O%E7%AC%A6%E5%8F%B7)，![\log ](https://wikimedia.org/api/rest_v1/media/math/render/svg/79e4debd0ab1c6ce342d0172a7643733305c37bc)是[對數](https://zh.wikipedia.org/wiki/%E5%AF%B9%E6%95%B0)）。二分搜尋演算法使用常數空間，對於任何大小的輸入資料，演算法使用的空間都是一樣的。除非輸入資料數量很少，否則二分搜尋演算法比線性搜尋更快，但陣列必須事先被排序。儘管一些特定的、為了快速搜尋而設計的資料結構更有效（比如[雜湊表](https://zh.wikipedia.org/wiki/%E5%93%88%E5%B8%8C%E8%A1%A8)），二分搜尋演算法應用面更廣。
 
