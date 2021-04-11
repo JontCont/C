@@ -37,23 +37,30 @@
 
 {% tabs %}
 {% tab title="C" %}
+```c
+#include<stdio.h>
+#include<stdlib.h>
 
-{% endtab %}
+void main (){
+    int money[2][4];
+    int total=0;
+    int i =0, j =0;
 
-{% tab title="C++" %}
+    do{
+        while (j<4)
+        {
+            printf("The %d quarter's turnover of the %d branch ", i+1,j+1);
+            scanf("%d",&money[i][j]);
+            total +=money[i][j];
+            j++;
+        }
+        i++; j =0;
+    }while (i < 2 );
+    printf("One year's total turnover>> %d", total);
 
-{% endtab %}
-{% endtabs %}
+}
 
-字串陣列，輸入兩個學生姓名、期中考3科成績。輸入3個學生總成績。
-
-{% tabs %}
-{% tab title="C" %}
-
-{% endtab %}
-
-{% tab title="C++" %}
-
+```
 {% endtab %}
 {% endtabs %}
 
