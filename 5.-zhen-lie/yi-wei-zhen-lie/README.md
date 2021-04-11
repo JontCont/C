@@ -204,3 +204,38 @@ void main (){
 
 二分搜尋演算法在[最壞情況](https://zh.wikipedia.org/w/index.php?title=%E6%9C%80%E5%9D%8F%E6%83%85%E5%86%B5&action=edit&redlink=1)下是[對數時間複雜度](https://zh.wikipedia.org/wiki/%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6#%E5%AF%B9%E6%95%B0%E6%97%B6%E9%97%B4)的，需要進行{O\(\log n\)}![O\(\log n\)](https://wikimedia.org/api/rest_v1/media/math/render/svg/aae0f22048ba6b7c05dbae17b056bfa16e21807d)次比較操作![n](https://wikimedia.org/api/rest_v1/media/math/render/svg/a601995d55609f2d9f5e233e36fbe9ea26011b3b)在此處是陣列的元素數量，![O](https://wikimedia.org/api/rest_v1/media/math/render/svg/9d70e1d0d87e2ef1092ea1ffe2923d9933ff18fc)是[大O記號](https://zh.wikipedia.org/wiki/%E5%A4%A7O%E7%AC%A6%E5%8F%B7)，![\log ](https://wikimedia.org/api/rest_v1/media/math/render/svg/79e4debd0ab1c6ce342d0172a7643733305c37bc)是[對數](https://zh.wikipedia.org/wiki/%E5%AF%B9%E6%95%B0)）。二分搜尋演算法使用常數空間，對於任何大小的輸入資料，演算法使用的空間都是一樣的。除非輸入資料數量很少，否則二分搜尋演算法比線性搜尋更快，但陣列必須事先被排序。儘管一些特定的、為了快速搜尋而設計的資料結構更有效（比如[雜湊表](https://zh.wikipedia.org/wiki/%E5%93%88%E5%B8%8C%E8%A1%A8)），二分搜尋演算法應用面更廣。
 
+```c
+#include<stdio.h>
+#include<stdlib.h>
+void search(int *search_Ctr, int target, int key);
+
+void main (){
+    int search_Ctr[] = {1,2,3,4,5,6,7,8,9,10};//初始內容
+    int Ctr_Max = sizeof(search_Ctr)/sizeof(search_Ctr[0]); //陣列的長度
+    int key = 0;int index = 0;  // key =需要搜尋的值  
+    scanf("%d",&key);
+    search(search_Ctr, Ctr_Max , key);
+}
+
+void search(int *search_Ctr, int target ,int key){
+    int index = 0 ,low= 0, height = target-1 ;
+    while (index < target)
+    {
+        int mid = (height + low) / 2 ;
+        if(search_Ctr[mid]< key){
+            low = mid+1;
+        }
+        else if(search_Ctr[mid] > key){
+            height = mid-1;
+        }
+        else {
+            printf("%d ",mid);
+            break;
+        }
+        index++;
+    }
+    
+}
+
+```
+
