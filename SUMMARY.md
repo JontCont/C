@@ -29,7 +29,6 @@
   * [未定義行為 \(Undefined behavior\)](6.-zhi-biao/wei-ding-yi-hang-wei-undefined-behavior.md)
 * [7. 自訂函式/副程式](7.-zi-ding-han-shi-fu-cheng-shi.md)
 * [8. 內/外 部變數](8.-nei-wai-bu-bian-shu/README.md)
-  * [生命週期](8.-nei-wai-bu-bian-shu/sheng-ming-zhou-qi.md)
   * [動/靜態變數、暫存器變數](8.-nei-wai-bu-bian-shu/dong-tai-bian-shu/README.md)
     * [動態配置記憶體](8.-nei-wai-bu-bian-shu/dong-tai-bian-shu/dong-tai-pei-zhi-ji-yi-ti.md)
 * [9. 自訂資料型態](9.-zi-ding-zi-liao-xing-tai/README.md)
