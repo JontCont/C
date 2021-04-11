@@ -2,7 +2,7 @@
 
  C 語言動態記憶體配置的相關函數位於 `stdlib.h` 這個 C 語言的標準函式庫中，以下是主要的幾個函數：
 
-```text
+```c
 void *malloc(size_t size);
 void *calloc(size_t nmemb, size_t size);
 void free(void *ptr);
@@ -13,21 +13,21 @@ void *realloc(void *ptr, size_t size);
 
 這些函數的詳細說明，可以參考 malloc\(3\) 的 man page：
 
-```text
+```c
 man 3 malloc
 ```
 
 以下是一些 C 語言配置與管理記憶體的範例程式碼。
 
-### 典型記憶體配置
+## 典型記憶體配置
 
 C 語言中最常被使用的記憶體管理方式就是使用 `malloc` 配置記憶體，並配合 `free` 來釋放記憶體。
 
-#### 一維陣列
+### 一維陣列
 
 這是使用 `malloc` 與 `free` 配置一維動態陣列的例子。
 
-```text
+```c
 #include <stdio.h>
 #include <stdlib.h>
 int main() {
@@ -68,11 +68,11 @@ int main() {
 
 一般來說在程式中只要呼叫一次 `malloc`，後續就要對應一次的 `free` 呼叫，確保每一次配置的記憶體在使用完之後，都有被妥善釋放。
 
-#### 二維陣列
+### 二維陣列
 
 這是拿一塊動態配置的記憶體空間，建立二維陣列的一種作法：
 
-```text
+```c
 #include <stdio.h>
 #include <stdlib.h>
 int main() {
@@ -109,7 +109,7 @@ int main() {
 
 這種作法其實跟一維陣列的記憶體配置方式類似，只是在配置記憶體時取得二維陣列所需的空間，然後將二維陣列的兩個索引（`i` 與 `j`）自己轉換成一維的索引（`index`），這樣就可以按照一維的方式來使用動態配置的記憶體，這種實作方式在 C 語言的程式中很常見。
 
-### 初始化陣列記憶體配置
+## 初始化陣列記憶體配置
 
 記憶體在剛配置好時，裡面所儲存的資料都是沒有用的東西（亂七八糟，每次執行程式都有可能不同），一定要在資料儲存進去之後，才能把裡面的資料拿來使用，而記憶體第一次被指定值的動作就稱為初始化（initialize）。
 
@@ -119,7 +119,7 @@ int main() {
 
 除了使用 `malloc` 之外，也可以使用 `calloc` 配置初始化的陣列記憶體，這兩個函數用法大同小異，只是參數的指定方式不同，以及有無初始化而已，以下是兩種函數寫法的比較。
 
-```text
+```c
 // 未初始化的一維陣列
 dynArr = malloc( arrLen * sizeof(int) );
 
@@ -135,7 +135,7 @@ dynArr = calloc( arrLen1 * arrLen2, sizeof(int) );
 
 透過 `calloc` 所取得的記憶體空間，其值會被自動初始化為 `0` 或 `NULL`，在釋放記憶體時跟 `malloc` 一樣都是呼叫 `free` 函數並傳入指向記憶體的指標。以下是一個範例：
 
-```text
+```c
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -172,7 +172,7 @@ gcc source.c
 
 另外一種初始化的方式是使用 `memset` 函數：
 
-```text
+```c
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -211,7 +211,7 @@ gcc source.c
 
 如果在使用動態配置的記憶體空間時，突然發現空間不足，需要再擴充，或是配置的空間太大，需要釋放掉一些時，可以使用 `realloc` 函數來處理。以下是簡單的範例：
 
-```text
+```c
 #include <stdio.h>
 #include <stdlib.h>
 int main() {
@@ -269,7 +269,7 @@ int main() {
 
 在使用 `realloc` 調整記憶體空間大小時，如果直接將空間大小調整為 `0`，則其效果就等同於 `free` 函數釋放整塊記憶體空間：
 
-```text
+```c
 #include <stdio.h>
 #include <stdlib.h>
 int main() {
