@@ -153,7 +153,7 @@ void SelSort(int A[], int n)  //選擇排序法之副程式
  }
 ```
 
-### 資料搜尋
+## 資料搜尋
 
 #### 線性搜尋法 - Sequential Search
 
