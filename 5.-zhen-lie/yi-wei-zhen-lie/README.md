@@ -1,4 +1,10 @@
+---
+description: 陣列 - 使用C語言為範例
+---
+
 # 一維陣列
+
+## 一維陣列
 
 一維陣列宣告語法如下：
 
@@ -22,25 +28,29 @@
 
 
 
-#### 範例
+### 一維陣列 - 範例
 
 輸入一星期每天花費的費用，印出總花費\(請用陣列\)。
 
 {% tabs %}
 {% tab title="C" %}
+```csharp
+#include <stdio.h>
 
-{% endtab %}
+int main(int argc, char const *argv[])
+{
+    int m[7], total=0;
+    for(int i = 0 ; i< 7 ; i ++){
+        printf("輸入星期 %d 的花費",i+1);
+        scanf("%d",&m[i]);
+        total+=m[i];
+    }
+    printf("一星期花費:%d\n",total);
 
-{% tab title="C++" %}
+    return 0;
+}
 
-{% endtab %}
-{% endtabs %}
-
-輸入最多7位元密碼，當使用者從鍵盤輸入字元時，螢幕只會有\*號，直到Enter為止。最後字串方式列出實際文字密碼。
-
-{% tabs %}
-{% tab title="C" %}
-
+```
 {% endtab %}
 
 {% tab title="C++" %}
@@ -67,10 +77,89 @@ char id[9];
 
 設定初始設定語法有下列方法
 
-```text
+```c
 char arrayname[長度 +1] = "字串內容";
 char arrayname [長度+1] ={'字元1','字元2'...}
 ```
 
+## 排序法
 
+### 氣泡排序法\(Bubble Sort \)-範例
+
+這個是將相鄰兩個資料逐一比較，資料是否需要互相交換位置。將 26、12、6 、  10、 58  用氣泡排序法從小排到大。
+
+```c
+void SelSort(int A[], int n)  //選擇排序法之副程式
+ {
+   int i, j, Temp, Min = 0;
+   for (i = 1; i <= n - 1; i++)
+    {
+       Min = i;
+       for (j = i + 1; j <= n; j++)
+          if (A[j] < A[Min])
+             Min = j;
+      {//相鄰兩個的資料交換位置
+       Temp = A[i];
+       A[i] = A[Min];
+       A[Min] = Temp;
+      }
+    }
+ }
+```
+
+### 插入排序法\(Insertion Sort\)
+
+* 依序由未排序的資料中選一筆資料
+* 一一掃瞄已排序資料，將選取的資料插入正確位置
+
+```c
+ void InSort(int A[], int n)  
+ {
+   int i, j, Temp;
+   for (i = 1; i <= n; i++)
+    {
+     Temp=A[i];
+     j=i-1;
+     while (Temp<A[j])
+      {
+        A[j+1]=A[j];
+        j--;
+        if(j==-1)
+          break;
+      }
+      A[j+1]=Temp;
+    }
+ }
+```
+
+### 選擇排序法\(Selection Sort\)
+
+```c
+void SelSort(int A[], int n)  //選擇排序法之副程式
+ {
+   int i, j, Temp, Min = 0;
+   for (i = 1; i <= n - 1; i++)
+    {
+       Min = i;
+       for (j = i + 1; j <= n; j++)
+          if (A[j] < A[Min])
+             Min = j;
+      {//相鄰兩個的資料交換位置
+       Temp = A[i];
+       A[i] = A[Min];
+       A[Min] = Temp;
+      }
+    }
+ }
+```
+
+### 資料搜尋
+
+線性搜尋法 - Sequential Search
+
+```c
+
+```
+
+二分搜尋法 - Binary Search 
 
