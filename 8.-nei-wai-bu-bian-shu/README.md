@@ -103,3 +103,9 @@ void func (int num_b) { // stack 區
 }
 ```
 
+## 工具
+
+### 使用valgrind檢查C語言memory Leak
+
+{% embed url="http://wen00072.github.io/blog/2014/11/29/catching-leakage-use-valgrind-checking-c-memory-leak/" %}
+
