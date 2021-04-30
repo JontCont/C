@@ -147,7 +147,7 @@ cd /etc/apache2/sites-enabled
 touch Demo.conf
 ```
 
-若是另一種介面可以使用vim 來操作
+若是另一種介面可以使用vim 來操作，下方做為參考，完成後記得將apache2 restart ，即可看到效果。
 
 ```text
 <VirtualHost *:81>
@@ -167,5 +167,9 @@ touch Demo.conf
         SetHandler mono
     </Directory>
 </VirtualHost>
+```
+
+```text
+service apache2 restart
 ```
 
