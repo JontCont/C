@@ -1,3 +1,7 @@
+---
+description: 本文章使用ubuntu 18.04
+---
+
 # Linux 架站
 
 ## 使用套件
@@ -47,6 +51,10 @@ echo "deb https://download.mono-project.com/repo/ubuntu stable-bionic main" | su
 sudo apt update
 
 sudo apt install mono-devel
+
+
+#apache2 
+sudo apt-get install apach2
 
 -------------額外安裝-----------------
 #GUI 桌面
