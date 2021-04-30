@@ -54,3 +54,7 @@
     * [巢狀結構](9.-zi-ding-zi-liao-xing-tai/jie-gou/chao-zhuang-jie-gou.md)
 * [10. 檔案處理](10.-dang-an-chu-li.md)
 
+## 外篇
+
+* [Linux 架站](wai-pian/linux-jia-zhan.md)
+
