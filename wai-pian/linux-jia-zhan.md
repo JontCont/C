@@ -55,7 +55,11 @@ sudo apt install mono-devel
 
 #apache2 
 sudo apt-get install apach2
+apache2 -version
 
+#配置防火牆設置
+$ sudo ufw app list
+$ sudo ufw allow 'Apache'
 -------------額外安裝-----------------
 #GUI 桌面
 sudo apt-get install -y xfce4
@@ -69,6 +73,24 @@ sudo apt install zip
 systemctl status apache2.service
 
 ```
+
+## 使用步驟
+
+### 一、放進自己的網頁
+
+將自己的網站放進以下路徑，不論是MVC 5 或是 Core 都可以使用
+
+```text
+/var/www/
+```
+
+如果遇到權限問題請參考下方
+
+```text
+sudo chmod -R 755 /var/www/example
+```
+
+### 二、設定conf
 
 
 
