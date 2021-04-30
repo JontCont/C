@@ -173,3 +173,49 @@ touch Demo.conf
 service apache2 restart
 ```
 
+## 異常狀況
+
+設置Web服務器後，您可能必須在Apache上執行一些基本管理操作。您可以在終端應用程序中輸入以下命令來執行這些操作。
+
+```text
+sudo systemctl start apache2
+```
+
+使用此命令作為sudo來啟動Apache服務器。
+
+```text
+sudo systemctl stop apache2
+```
+
+使用此命令作為sudo可以在啟動模式下停止Apache服務器。
+
+```text
+sudo systemctl restart apache2
+```
+
+使用此命令作為sudo可以停止然後再次啟動Apache服務。
+
+```text
+sudo systemctl reload apache2
+```
+
+使用此命令作為sudo可以應用配置更改，而無需重新啟動連接。
+
+```text
+sudo systemctl enable apache2
+```
+
+使用此命令作為sudo可以使每次啟動係統時都可以啟動Apache。
+
+```text
+sudo systemctl disable apache2
+```
+
+使用此命令作為sudo可以禁用是否設置了每次引導係統時都可以啟動的Apache。
+
+```text
+sudo systemctl status apache2.service
+```
+
+重啟apache 2時有錯誤訊息，可以參閱這個錯誤訊息。
+
