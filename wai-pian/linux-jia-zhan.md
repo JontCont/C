@@ -6,7 +6,7 @@
 
 {% embed url="https://www.mono-project.com/download/stable/\#download-lin" %}
 
-二、其他
+### 二、其他套件
 
 ```text
 -------------------必須要執行-------------------
