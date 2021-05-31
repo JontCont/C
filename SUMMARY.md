@@ -47,11 +47,6 @@
     * [定義列舉](9.-zi-ding-zi-liao-xing-tai/lie-ju/ding-yi-lie-ju.md)
     * [宣告列舉](9.-zi-ding-zi-liao-xing-tai/lie-ju/xuan-gao-lie-ju.md)
     * [使用列舉](9.-zi-ding-zi-liao-xing-tai/lie-ju/shi-yong-lie-ju.md)
-  * [結構](9.-zi-ding-zi-liao-xing-tai/jie-gou/README.md)
-    * [使用結構](9.-zi-ding-zi-liao-xing-tai/jie-gou/shi-yong-jie-gou.md)
-    * [宣告結構](9.-zi-ding-zi-liao-xing-tai/jie-gou/xuan-gao-jie-gou.md)
-    * [定義結構](9.-zi-ding-zi-liao-xing-tai/jie-gou/ding-yi-jie-gou.md)
-    * [巢狀結構](9.-zi-ding-zi-liao-xing-tai/jie-gou/chao-zhuang-jie-gou.md)
 * [10. 檔案處理](10.-dang-an-chu-li.md)
 
 ## 外篇
