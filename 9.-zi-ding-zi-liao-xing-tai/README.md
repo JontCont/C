@@ -73,3 +73,11 @@ struct employee
 
 ```
 
+{% hint style="info" %}
+### 注意
+
+定義巢狀結構時候，單層結構定義要寫在雙層結構定義上面，雙層結構定義要寫三層結構定義上面。否則會出現類似field 結構名稱 'has incomplete type'的錯誤訊息。
+{% endhint %}
+
+
+
