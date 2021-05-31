@@ -53,3 +53,23 @@ struct 結構名稱    結構變數;
 
 結構變數是一般結構變數或是結構陣列變數時，要存取結構中的資料成員內容或使用結構中的成員函式，則必須使用結構運算子\(.\)，若情況為指標結構運算子則為\(-&gt;\)。
 
+### 四、巢狀結構
+
+一個結構成員中，若有一個資料成員的資料型態為結構型態時，稱為巢狀結構。
+
+```cpp
+struct  parent  
+{
+    string name;
+    int    age;
+};
+
+struct employee
+{
+    int id;
+    string name;
+    struct parent myparent;
+};
+
+```
+
