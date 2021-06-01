@@ -2,7 +2,7 @@
 description: 變數依據宣告位置來做分類。
 ---
 
-# 8. 內/外 部變數
+# 八、 內/外 部變數
 
 ## 自動變數\(Automatic Variable\)
 

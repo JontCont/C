@@ -19,12 +19,12 @@
   * [二維陣列](5.-zhen-lie/er-wei-zhen-lie.md)
   * [三維陣列](5.-zhen-lie/san-wei-zhen-lie.md)
 * [六、指標](6.-zhi-biao.md)
-* [7. 自訂函式/副程式](7.-zi-ding-han-shi-fu-cheng-shi.md)
-* [8. 內/外 部變數](8.-nei-wai-bu-bian-shu/README.md)
+* [七、 自訂函式/副程式](7.-zi-ding-han-shi-fu-cheng-shi.md)
+* [八、 內/外 部變數](8.-nei-wai-bu-bian-shu/README.md)
   * [動/靜態變數、暫存器變數](8.-nei-wai-bu-bian-shu/dong-tai-bian-shu/README.md)
     * [動態配置記憶體](8.-nei-wai-bu-bian-shu/dong-tai-bian-shu/dong-tai-pei-zhi-ji-yi-ti.md)
-* [9. 自訂資料型態](9.-zi-ding-zi-liao-xing-tai.md)
-* [10. 檔案處理](10.-dang-an-chu-li.md)
+* [九、 自訂資料型態](9.-zi-ding-zi-liao-xing-tai.md)
+* [十、檔案處理](10.-dang-an-chu-li.md)
 
 ## 外篇
 
