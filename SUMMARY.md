@@ -14,7 +14,7 @@
     * [位元運算](2.-zi-liao-xing-tai-xuan-gao/25-zi-liao-yun-suan/wei-yuan-yun-suan.md)
 * [三、 變數宣告](3.-bian-shu-xuan-gao.md)
 * [四、 程式主要結構](untitled.md)
-* [5. 陣列](5.-zhen-lie/README.md)
+* [五、 陣列](5.-zhen-lie/README.md)
   * [一維陣列](5.-zhen-lie/yi-wei-zhen-lie.md)
   * [二維陣列](5.-zhen-lie/er-wei-zhen-lie.md)
   * [三維陣列](5.-zhen-lie/san-wei-zhen-lie.md)
