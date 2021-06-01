@@ -1,6 +1,6 @@
 # 1-1 使用方式
 
-> ## **MinGW**
+## MinGW
 
 使用[MinGW](http://www.mingw.org/)下載點， 若要在Windows下執行GCC，安裝完成後需要設定windows環境變數， 設定方法`由控制台→系統→進階系統設定→進階(Label)→環境變數`。
 
