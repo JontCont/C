@@ -37,7 +37,7 @@ printf(" int out content %d", i );`
 
 下方為 stdio.h 的函數
 
-```text
+```c
     _Check_return_opt_
     _CRT_STDIO_INLINE int __CRTDECL printf(
         _In_z_ _Printf_format_string_ char const* const _Format,
